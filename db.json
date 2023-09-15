@@ -1,0 +1,243 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Murad Ibrahimov",
+      "username": "muradibra",
+      "password": "nihadmurad",
+      "email": "muradibrahimov495@gmail.com"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "slug": "larq-bottle-purevis-monaco-blue",
+      "main_img_url": "src/assets/img/product-img1.webp",
+      "title": "LARQ Bottle PureVis™",
+      "shop": "purification",
+      "description": {
+        "long": "The LARQ Bottle PureVis™ is the world's first self-cleaning water bottle and water purification system. It uses PureVis technology to eliminate up to 99%* of bio-contaminants such as E. coli from your water and bottle.",
+        "short": "*Based on elimination 99.8% of E.coli in a 20-second cycle for all LARQ Bottles."
+      },
+      "color": "Monaco Blue",
+      "price": 99,
+      "sizes": [17, 25],
+      "images": [
+        "src/assets/img/product-img1.webp",
+        "src/assets/img/product-img2.webp",
+        "src/assets/img/product-img3.webp",
+        "src/assets/img/drinkware-product1.webp",
+        "src/assets/img/drinkware-product2.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "larq-pitcher-purevis-monaco-blue",
+      "main_img_url": "src/assets/img/home-product1.webp",
+      "title": "LARQ Pitcher PureVis™",
+      "shop": "home",
+      "description": {
+        "long": "The LARQ Pitcher uses a unique 2-step process to improve the quality of your water using PureVis™ and Nano Zero filter technology–giving you fresh-tasting water sip after sip."
+      },
+      "color": "Monaco Blue",
+      "price": 168,
+      "discounted_price": 139,
+      "sizes": [17, 25],
+      "images": [
+        "src/assets/img/home-product1.webp",
+        "src/assets/img/home-product2.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "larq-bottle-swig-top-obsidian-black",
+      "main_img_url": "src/assets/img/drinkware-product1.webp",
+      "title": "LARQ Bottle Swig Top",
+      "shop": "drinkware",
+      "description": {
+        "long": "Sippers, chuggers, swiggers and ice-lovers—rejoice! The LARQ Bottle Swig Top was designed for easy hydrating on the go—simply snap open the cap!",
+        "short": "As our first wide-mouth water bottle, we made sure to provide extra room for loading up with ice. Plus, double-wall insulation means that water stays cold for up to 24 hours. Aah—"
+      },
+      "color": "Obsidian Black",
+      "price": 39.95,
+      "sizes": [23, 34],
+      "images": [
+        "src/assets/img/drinkware-product1.webp",
+        "src/assets/img/drinkware-product1.webp",
+        "src/assets/img/drinkware-product1.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "larq-bottle-filtered-obsidian-black",
+      "main_img_url": "src/assets/img/product-img3.webp",
+      "title": "LARQ Bottle Filtered",
+      "shop": "purification",
+      "description": {
+        "long": "A revolutionary portable water filtration system that combines high-performance Nano Zero filter technology with zerovalent iron providing a seamless, low-pressure drinking experience."
+      },
+      "color": "Obsidian Black",
+      "price": 58,
+      "discounted_price": 49.95,
+      "sizes": [17, 25],
+      "images": [
+        "src/assets/img/product-img3.webp",
+        "src/assets/img/product-img3.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "larq-bottle-flip-top-obsidian-black",
+      "main_img_url": "src/assets/img/drinkware-product2.webp",
+      "title": "LARQ Bottle Flip Top",
+      "shop": "drinkware",
+      "description": {
+        "long": "The LARQ Bottle Flip Top features an easy-access straw so you can sip your hydration goals down with ease. It’s double-wall vacuum insulated to keep water cold for up to 24 hours and the silicone-coated detachable carabiner makes on-the-go hydration that much easier."
+      },
+      "color": "Obsidian Black",
+      "price": 39.95,
+      "sizes": [17, 25],
+      "images": [
+        "src/assets/img/drinkware-product2.webp",
+        "src/assets/img/drinkware-product2.webp",
+        "src/assets/img/drinkware-product2.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "larq-bottle-twist-top-monaco-blue",
+      "main_img_url": "src/assets/img/drinkware-product3.webp",
+      "title": "LARQ Bottle Twist Top",
+      "shop": "drinkware",
+      "description": {
+        "long": "The LARQ Bottle Twist Top features double-wall vacuum insulation to keep water cold for up to 24 hours and hot for 12 hours. Powder-coated in two-toned colors, the LARQ Bottle Twist Top is perfect for the office, a weekend snow trip, and staying hydrated wherever your adventures take you.",
+        "short": "Note: The LARQ Bottle does not feature our built-in PureVis™ technology. Learn more about our LARQ Bottle with PureVis™ technology for on-the-go water purification here."
+      },
+      "color": "Monaco Blue",
+      "price": 29.95,
+      "sizes": [17, 25],
+      "images": [
+        "src/assets/img/drinkware-product3.webp",
+        "src/assets/img/drinkware-product3.webp",
+        "src/assets/img/drinkware-product3.webp",
+        "src/assets/img/drinkware-product3.webp",
+        "src/assets/img/drinkware-product3.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "larq-bottle-movement-purevis-monaco-blue",
+      "main_img_url": "src/assets/img/product-img2.webp",
+      "title": "LARQ Bottle Movement PureVis™",
+      "shop": "purification",
+      "description": {
+        "long": "The LARQ Bottle Movement PureVis™ actively self-cleans and improves water quality in a lightweight single-walled stainless steel build–perfect for outdoor adventures, going to the gym, or whatever moves you. It uses PureVis™ technology to neutralize up to 99%* of E.coli from your water and bottle.",
+        "short": "*Based on elimination 99.8% of E.coli in a 20-second cycle for all LARQ Bottles."
+      },
+      "color": "Obsidian Black",
+      "price": 89,
+      "sizes": [24, 32],
+      "images": [
+        "src/assets/img/product-img1.webp",
+        "src/assets/img/product-img2.webp",
+        "src/assets/img/product-img3.webp",
+        "src/assets/img/drinkware-product1.webp",
+        "src/assets/img/drinkware-product2.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "larq-pitcher-purevis-pure-white",
+      "main_img_url": "src/assets/img/product-img2.webp",
+      "title": "LARQ Pitcher PureVis™",
+      "shop": "home",
+      "description": {
+        "long": "The LARQ Pitcher uses a unique 2-step process to improve the quality of your water using PureVis™ and Nano Zero filter technology–giving you fresh-tasting water sip after sip."
+      },
+      "color": "Pure White",
+      "price": 168,
+      "discounted_price": 139,
+      "sizes": [17, 25],
+      "images": [
+        "src/assets/img/product-img1.webp",
+        "src/assets/img/product-img2.webp",
+        "src/assets/img/product-img3.webp",
+        "src/assets/img/drinkware-product1.webp",
+        "src/assets/img/drinkware-product2.webp"
+      ],
+      "colors": ["#234532", "#234532", "#234532"],
+      "skus": [
+        {
+          "img_url": ""
+        },
+        {
+          "img_url": ""
+        }
+      ]
+    }
+  ]
+}

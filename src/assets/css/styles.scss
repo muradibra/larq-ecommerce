@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import "./_header";
+@import "./_home";
+@import "./_side-menu";
+@import "./_footer";
+@import "./_shop";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  &.menu-open {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

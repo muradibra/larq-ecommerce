@@ -1,0 +1,124 @@
+:root {
+  --primary-font-size: clamp(
+    1.6rem,
+    calc(1.6rem + (40) * ((100vw - 428px) / (1920 - 428))),
+    4.26667rem
+  );
+  --secondary-font-size: clamp(
+    0.93333rem,
+    0.93333rem + 2 * ((100vw - 428px) / 1492),
+    1.06667rem
+  );
+  --primary-blue: #153a5b;
+  --primary-padding: clamp(
+    1.6rem,
+    calc(1.6rem + (56) * ((100vw - 428px) / (1920 - 428))),
+    5.33333rem
+  );
+  --primary-grey: #5a5e60;
+}
+
+.shop {
+  .shop-all {
+    color: var(--primary-blue);
+    padding-top: 50px;
+    .head-content {
+      text-align: center;
+      padding: var(--primary-padding) var(--primary-padding) 0;
+
+      .head-title {
+        font-size: var(--primary-font-size);
+        margin-bottom: 16px;
+      }
+
+      .head-subtitle {
+        color: var(--primary-grey);
+      }
+    }
+  }
+  .categories {
+    // display: flex;
+    // overflow-x: scroll;
+    display: inline-flex;
+    flex-flow: row;
+    align-items: flex-start;
+    column-gap: clamp(
+      1.06667rem,
+      1.06667rem + 24 * ((100vw - 428px) / 1492),
+      2.66667rem
+    );
+    margin: 0px;
+    padding: clamp(
+        1.06667rem,
+        1.06667rem + 8 * ((100vw - 428px) / 1492),
+        1.6rem
+      )
+      clamp(1.06667rem, 1.06667rem + 24 * ((100vw - 428px) / 1492), 2.66667rem);
+    height: 100%;
+    .category {
+      a {
+        text-align: center;
+
+        .category-img-wrapper {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          font-size: var(--secondary-font-size);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .purification {
+    padding: var(--primary-padding) var(--primary-padding) 0;
+
+    .description {
+      margin-bottom: clamp(
+        2rem,
+        2rem + 10 * ((100vw - 428px) / 1492),
+        2.66667rem
+      );
+    }
+
+    .purification-slider {
+      // padding: 0 var(--primary-padding);
+      margin-bottom: 100px;
+
+      .slide-inner {
+        padding-bottom: 15px;
+        .bg {
+          background-color: #f5f6fa;
+
+          .img-wrapper {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .product-info {
+            text-align: center;
+            color: var(--primary-blue);
+            padding: 0 2.66667rem 2.66667rem;
+
+            .title {
+              h2 {
+                font-size: clamp(
+                  1.06667rem,
+                  1.06667rem + 4 * ((100vw - 428px) / 1492),
+                  1.33333rem
+                );
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

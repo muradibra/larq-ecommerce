@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 import { FaBars } from 'react-icons/fa'
 import { BsCart3 } from 'react-icons/bs'
 import { AiOutlineClose, AiOutlineArrowRight } from 'react-icons/ai'
-import Logo from '../utils/logo';
+import Logo from '../lib/Logo';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart, toggleSideMenu } from '../../features/sideMenuSlice/sideMenuSlice';
 import { AppContext } from '../../context/appContext';
 import { Link, useNavigate } from 'react-router-dom';
+import Cart from './Cart';
 
 
 const Header = () => {
@@ -40,20 +41,7 @@ const Header = () => {
         };
     }, [prevScrollPos]);
 
-    // useEffect(() => {
-    //     const handleClickOutside = (e) => {
-    //         if (cartRef.current && !cartRef.current.contains(e.target)) {
-    //             dispatch(toggleCart());
-    //         }
-    //         console.log(cartRef.current)
-    //     }
-
-    //     document.addEventListener("mousedown", handleClickOutside);
-
-    //     return () => {
-    //         document.removeEventListener("mousedown", handleClickOutside);
-    //     };
-    // }, [dispatch]);
+    
 
     const handleCartIconClick = () => {
         dispatch(toggleCart());
@@ -61,34 +49,8 @@ const Header = () => {
 
     return (
         <div className={`header ${visible ? 'visible' : 'hidden'}`}>
-            <div className={`cart ${!isCartOpen ? 'isCartClosed' : "isCartOpen"}`} ref={cartRef}>
-                <div className='your-cart'>
-
-                    <div>
-                        <span>Your cart</span>
-                    </div>
-                    <div
-                        className='cart-close-icon'
-                        onClick={() => dispatch(toggleCart())}>
-                        <AiOutlineClose />
-                    </div>
-
-                </div>
-
-                <div className='cart-inner'>
-                    <div className='progress-section'>
-                        <span>$10 store credit</span>
-                        <div className='progress-bar'></div>
-                        <p className='progress-bar-text'>You're <b>$200.00</b> away from <b>$10</b> in store credit!</p>
-                    </div>
-
-                    <div className='cart-items-section'>
-                        <h2>Oh, it appears your cart is empty</h2>
-                        <button>SHOP LARQ</button>
-                    </div>
-                </div>
-
-            </div>
+            <Cart />
+            
             <div className="header-content">
                 <div
                     className='icon'

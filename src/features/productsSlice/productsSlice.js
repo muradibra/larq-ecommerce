@@ -8,7 +8,7 @@ const initialState = {
     errMessage: ""
 }
 
-export const fetchProducts = createAsyncThunk('products/fetch', async () => {
+export const fetchProducts = createAsyncThunk('products/get', async () => {
     try {
         const res = await axios.get(`${apiUrl}/products`)
         return res.data

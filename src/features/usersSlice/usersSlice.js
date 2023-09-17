@@ -8,12 +8,12 @@ const initialState = {
     errMessage: ""
 }
 
-export const fetchUsers = createAsyncThunk("user/fetch", async () => {
+export const fetchUsers = createAsyncThunk("user/get", async () => {
     try {
         const res = await axios.get('http://localhost:3000/users')
         return res.data
-    } catch (error) {
-        return error.message
+    } catch (err) {
+        return err.message
     }
 })
 

@@ -12,9 +12,9 @@ import review_bestProd from '../../../assets/img/review-best-prod.png'
 import previewImg1 from '../../../assets/img/sideImg1-clean.jpg'
 import previewImg2 from '../../../assets/img/sideImg2-clean.jpg'
 import previewImg3 from '../../../assets/img/sideImg3-clean.jpg'
-import RefillSvg from '../../utils/RefillSvg'
-import SmartSipSvg from '../../utils/SmartSipSvg'
-import HydrationSupportSvg from '../../utils/HydrationSupportSvg'
+import RefillSvg from '../../lib/RefillSvg'
+import SmartSipSvg from '../../lib/SmartSipSvg'
+import HydrationSupportSvg from '../../lib/HydrationSupportSvg'
 import { fetchProducts } from '../../../features/productsSlice/productsSlice'
 import SwiperBtnPrev from '../../utils/SwiperBtnPrev'
 import SwiperBtnNext from '../../utils/SwiperBtnNext'
@@ -55,83 +55,6 @@ function Home() {
 
   return (
     <div className='home'>
-      {/* <div className={`side-menu ${!isSideMenuOpen ? "isClosed" : "isOpen"}`}>
-        <div className='side-menu-content'>
-
-          <div className="nav-items">
-
-            <div className='nav-item purification-sec'>
-
-              <div className='nav-item-text purification-text'>
-                <p>Purification</p>
-                <span>Filter or purify the water on the go.</span>
-              </div>
-
-              <div className='nav-item-bgImg sideImg1'></div>
-
-            </div>
-
-            <div className='nav-item home-sec'>
-
-              <div className='nav-item-text home-text'>
-                <p>Home</p>
-                <span>Equip your home with Nano Zero filtration.</span>
-              </div>
-
-              <div className='nav-item-bgImg sideImg2'></div>
-
-            </div>
-
-            <div className='nav-item drinkware-sec'>
-
-              <div className='nav-item-text drinkware-text'>
-                <p>Drinkware</p>
-                <span>Hydrate effortlessly on the go.</span>
-              </div>
-
-              <div className='nav-item-bgImg sideImg3'></div>
-
-            </div>
-
-          </div>
-
-          <div className='secondary-links'>
-            <button className='explore-all-btn'>
-              <Link to='/shop'>
-                <span>Explore All</span>
-                <AiOutlineArrowRight />
-              </Link>
-            </button>
-
-            <ul>
-              <li>
-                <Link to='/accessories'>Filters & Accessories</Link>
-              </li>
-              <li>
-                <Link to='/shop?shop=gift-sets'>Gift sets</Link>
-              </li>
-              <li>
-                <Link to='/corporate-gifting'>Corporate gifting</Link>
-              </li>
-              <li>
-                <Link to='/support'>FAQ</Link>
-              </li>
-              <li>
-                <button onClick={() => {
-                  localStorage.removeItem("isAuth")
-                  setIsAuth(false)
-                  navigate('/')
-                }}
-                >
-                  Log out
-                </button>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-      </div> */}
       <SideMenu />
 
       {/* <div className="content-container"> */}
@@ -345,15 +268,20 @@ function Home() {
           spaceBetween={45}
           slidesPerView={1.3}
           breakpoints={{
-            800: {
+            700: {
+              slidesPerView: 1.5
+            },
+            780: {
+              slidesPerView: 1.8
+            },
+            940: {
               slidesPerView: 2
             },
-            1190: {
-              slidesPerView: 3
+            1100: {
+              slidesPerView: 2.5
             },
-            1440: {
-              slidesPerView: 4,
-              width: 1100
+            1350: {
+              slidesPerView: 3
             }
           }}
         >
@@ -378,19 +306,20 @@ function Home() {
                         // scrollbar={{ draggable: true }}
                         navigation={{ clickable: true }}
                         spaceBetween={45}
-                        slidesPerView={4}
-                      // breakpoints={{
-                      //   800: {
-                      //     slidesPerView: 2
-                      //   },
-                      //   1190: {
-                      //     slidesPerView: 3
-                      //   },
-                      //   1440: {
-                      //     slidesPerView: 4,
-                      //     width: 1100
-                      //   }
-                      // }}
+                        slidesPerView={1.1}
+                        breakpoints={{
+
+                          //   800: {
+                          //     slidesPerView: 2
+                          //   },
+                          //   1190: {
+                          //     slidesPerView: 3
+                          //   },
+                          //   1440: {
+                          //     slidesPerView: 4,
+                          //     width: 1100
+                          //   }
+                        }}
                       >
                         {/* <SwiperBtnPrev /> */}
                         {/* {
@@ -494,26 +423,30 @@ function Home() {
             <Swiper
               modules={[Scrollbar]}
               scrollbar={{ draggable: true }}
-              spaceBetween={400}
-              slidesPerView={1.4}
+              spaceBetween={100}
+              slidesPerView={1.1}
               breakpoints={{
                 700: {
-                  slidesPerView: 1.7,
-                  spaceBetween: 200
+                  slidesPerView: 1.5,
+                  spaceBetween: 30
                 },
-                780: {
-                  slidesPerView: 2
+                940: {
+                  slidesPerView: 2,
+                  spaceBetween: 60
                 },
-                1067: {
-                  slidesPerView: 2.5
+                1000: {
+                  slidesPerView: 2.2,
+                  spaceBetween: 90,
                 },
-                1250: {
-                  slidesPerView: 3
+                1200: {
+                  slidesPerView: 2.5,
                 },
-                1440: {
-                  slidesPerView: 3.5,
-                  width: 1100,
-                  spaceBetween: 440
+                1380 : {
+                  slidesPerView: 3,
+                },
+                1450: {
+                  slidesPerView: 3.3 ,
+                  spaceBetween: 100
                 }
               }}
             >

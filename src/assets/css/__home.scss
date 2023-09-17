@@ -328,7 +328,7 @@
     }
 
     .slide-inner {
-      background-color: #f5f6fa;
+      background-color: #f5f6fa !important;
       margin-bottom: 30px;
       .img-wrapper {
         width: 100%;
@@ -422,6 +422,7 @@
           position: relative;
 
           .swiper-btn-prev {
+            display: none;
             position: absolute;
             top: 40%;
             left: 0;
@@ -429,6 +430,7 @@
           }
 
           .swiper-btn-next {
+            display: none;
             position: absolute;
             top: 40%;
             right: 0;
@@ -443,10 +445,10 @@
             color: var(--primary-blue);
 
             .magazine-img-wrapper {
-              // width: 100%;
+              width: 100%;
               margin-bottom: 10px;
               img {
-                // width: 100%;
+                width: 100%;
                 border-radius: 15px;
               }
             }
@@ -550,6 +552,16 @@
 
     .rating {
       flex-direction: column;
+    }
+  }
+
+  .magazine-swiper {
+    .swiper-btn-prev {
+      display: block !important;
+    }
+
+    .swiper-btn-next {
+      display: block !important;
     }
   }
 }

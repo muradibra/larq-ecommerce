@@ -21,14 +21,14 @@
         "short": "*Based on elimination 99.8% of E.coli in a 20-second cycle for all LARQ Bottles."
       },
       "color": "Monaco Blue",
-      "price": 99,
+      "price": 99.00,
       "sizes": [17, 25],
       "images": [
-        "src/assets/img/product-img1.webp",
-        "src/assets/img/product-img2.webp",
-        "src/assets/img/product-img3.webp",
-        "src/assets/img/drinkware-product1.webp",
-        "src/assets/img/drinkware-product2.webp"
+        "/src/assets/img/product-img1.webp",
+        "/src/assets/img/product-img2.webp",
+        "/src/assets/img/product-img3.webp",
+        "/src/assets/img/drinkware-product1.webp",
+        "/src/assets/img/drinkware-product2.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [
@@ -50,12 +50,12 @@
         "long": "The LARQ Pitcher uses a unique 2-step process to improve the quality of your water using PureVis™ and Nano Zero filter technology–giving you fresh-tasting water sip after sip."
       },
       "color": "Monaco Blue",
-      "price": 168,
-      "discounted_price": 139,
+      "price": 168.00,
+      "discounted_price": 139.00,
       "sizes": [17, 25],
       "images": [
-        "src/assets/img/home-product1.webp",
-        "src/assets/img/home-product2.webp"
+        "/src/assets/img/home-product1.webp",
+        "/src/assets/img/home-product2.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [
@@ -81,9 +81,9 @@
       "price": 39.95,
       "sizes": [23, 34],
       "images": [
-        "src/assets/img/drinkware-product1.webp",
-        "src/assets/img/drinkware-product1.webp",
-        "src/assets/img/drinkware-product1.webp"
+        "/src/assets/img/drinkware-product1.webp",
+        "/src/assets/img/drinkware-product1.webp",
+        "/src/assets/img/drinkware-product1.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [
@@ -105,12 +105,12 @@
         "long": "A revolutionary portable water filtration system that combines high-performance Nano Zero filter technology with zerovalent iron providing a seamless, low-pressure drinking experience."
       },
       "color": "Obsidian Black",
-      "price": 58,
+      "price": 58.00,
       "discounted_price": 49.95,
       "sizes": [17, 25],
       "images": [
-        "src/assets/img/product-img3.webp",
-        "src/assets/img/product-img3.webp"
+        "/src/assets/img/product-img3.webp",
+        "/src/assets/img/product-img3.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [
@@ -135,9 +135,9 @@
       "price": 39.95,
       "sizes": [17, 25],
       "images": [
-        "src/assets/img/drinkware-product2.webp",
-        "src/assets/img/drinkware-product2.webp",
-        "src/assets/img/drinkware-product2.webp"
+        "/src/assets/img/drinkware-product2.webp",
+        "/src/assets/img/drinkware-product2.webp",
+        "/src/assets/img/drinkware-product2.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [
@@ -163,11 +163,11 @@
       "price": 29.95,
       "sizes": [17, 25],
       "images": [
-        "src/assets/img/drinkware-product3.webp",
-        "src/assets/img/drinkware-product3.webp",
-        "src/assets/img/drinkware-product3.webp",
-        "src/assets/img/drinkware-product3.webp",
-        "src/assets/img/drinkware-product3.webp"
+        "/src/assets/img/drinkware-product3.webp",
+        "/src/assets/img/drinkware-product3.webp",
+        "/src/assets/img/drinkware-product3.webp",
+        "/src/assets/img/drinkware-product3.webp",
+        "/src/assets/img/drinkware-product3.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [
@@ -190,14 +190,14 @@
         "short": "*Based on elimination 99.8% of E.coli in a 20-second cycle for all LARQ Bottles."
       },
       "color": "Obsidian Black",
-      "price": 89,
+      "price": 89.00,
       "sizes": [24, 32],
       "images": [
-        "src/assets/img/product-img1.webp",
-        "src/assets/img/product-img2.webp",
-        "src/assets/img/product-img3.webp",
-        "src/assets/img/drinkware-product1.webp",
-        "src/assets/img/drinkware-product2.webp"
+        "/src/assets/img/product-img1.webp",
+        "/src/assets/img/product-img2.webp",
+        "/src/assets/img/product-img3.webp",
+        "/src/assets/img/drinkware-product1.webp",
+        "/src/assets/img/drinkware-product2.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [
@@ -212,22 +212,22 @@
     {
       "id": 8,
       "slug": "larq-pitcher-purevis-pure-white",
-      "main_img_url": "src/assets/img/product-img2.webp",
+      "main_img_url": "src/assets/img/home-product2.webp",
       "title": "LARQ Pitcher PureVis™",
       "shop": "home",
       "description": {
         "long": "The LARQ Pitcher uses a unique 2-step process to improve the quality of your water using PureVis™ and Nano Zero filter technology–giving you fresh-tasting water sip after sip."
       },
       "color": "Pure White",
-      "price": 168,
-      "discounted_price": 139,
+      "price": 168.00,
+      "discounted_price": 139.00,
       "sizes": [17, 25],
       "images": [
-        "src/assets/img/product-img1.webp",
-        "src/assets/img/product-img2.webp",
-        "src/assets/img/product-img3.webp",
-        "src/assets/img/drinkware-product1.webp",
-        "src/assets/img/drinkware-product2.webp"
+        "/src/assets/img/product-img1.webp",
+        "/src/assets/img/product-img2.webp",
+        "/src/assets/img/product-img3.webp",
+        "/src/assets/img/drinkware-product1.webp",
+        "/src/assets/img/drinkware-product2.webp"
       ],
       "colors": ["#234532", "#234532", "#234532"],
       "skus": [

@@ -8,12 +8,11 @@
       "email": "muradibrahimov495@gmail.com"
     }
   ],
-
   "products": [
     {
       "id": 1,
       "slug": "larq-bottle-purevis-monaco-blue",
-      "main_img_url": "src/assets/img/product-img1.webp",
+      "main_img_url": "/src/assets/img/product-img1.webp",
       "title": "LARQ Bottle PureVis™",
       "shop": "purification",
       "description": {
@@ -21,8 +20,30 @@
         "short": "*Based on elimination 99.8% of E.coli in a 20-second cycle for all LARQ Bottles."
       },
       "color": "Monaco Blue",
-      "price": 99.00,
-      "sizes": [17, 25],
+      "price": "99.00",
+      "payment_by_credit": "Or 4 interest-free installments if $24.75",
+      "stars": 4.3,
+      "review_count": "6160 reviews",
+      "insulation": [
+        {
+          "icon": "https://static.vecteezy.com/system/resources/thumbnails/000/353/173/small/Health__2821_29.jpg",
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "icon": "https://img.myloview.com/stickers/steel-thermos-icon-outline-steel-thermos-vector-icon-for-web-design-isolated-on-white-background-400-177311507.jpg",
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "17 oz"
+        },
+        {
+          "size": "25 oz"
+        }
+      ],
       "images": [
         "/src/assets/img/product-img1.webp",
         "/src/assets/img/product-img2.webp",
@@ -30,47 +51,100 @@
         "/src/assets/img/drinkware-product1.webp",
         "/src/assets/img/drinkware-product2.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
-      "skus": [
+      "colors": [
         {
-          "img_url": ""
+          "color_name": "Monaco Blue",
+          "hex_code": "#1b395c"
         },
         {
-          "img_url": ""
+          "color_name": "Obsidian Black",
+          "hex_code": "#232323"
+        },
+        {
+          "color_name": "Seaside Mint",
+          "hex_code": "#aac3c6"
+        },
+        {
+          "color_name": "Granite White",
+          "hex_code": "#d1d1d0"
+        },
+        {
+          "color_name": "Himalayan Pink",
+          "hex_code": "#daaaaa"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "/src/assets/img/product-img1.webp"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607536834/p1-mb-17-1/p1-mb-17-1.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607536830/p1-mb-17-4/p1-mb-17-4.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607536829/p1-mb-17-6/p1-mb-17-6.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1620409727/BDMB050A-4/BDMB050A-4.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607536828/p1-mb-17-7/p1-mb-17-7.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607536828/p1-mb-17-8/p1-mb-17-8.jpg?_i=AA"
         }
       ]
     },
     {
       "id": 2,
       "slug": "larq-pitcher-purevis-monaco-blue",
-      "main_img_url": "src/assets/img/home-product1.webp",
+      "main_img_url": "/src/assets/img/home-product1.webp",
       "title": "LARQ Pitcher PureVis™",
       "shop": "home",
       "description": {
         "long": "The LARQ Pitcher uses a unique 2-step process to improve the quality of your water using PureVis™ and Nano Zero filter technology–giving you fresh-tasting water sip after sip."
       },
       "color": "Monaco Blue",
-      "price": 168.00,
-      "discounted_price": 139.00,
-      "sizes": [17, 25],
+      "price": "168.00",
+      "discounted_price": "139.00",
+      "payment_by_credit": "Or 4 interest-free installments if $34.75",
+      "stars": 4.3,
+      "review_count": "6160 reviews",
       "images": [
         "/src/assets/img/home-product1.webp",
         "/src/assets/img/home-product2.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
-      "skus": [
+      "colors": [
         {
-          "img_url": ""
+          "color_name": "Monaco Blue",
+          "hex_code": "#1b395c"
         },
         {
-          "img_url": ""
+          "color_name": "Pure White",
+          "hex_code": "#fff"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "/src/assets/img/home-product1.webp"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630139/Pitcher-PureVis-MB-03-Gray/Pitcher-PureVis-MB-03-Gray.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630139/Pitcher-PureVis-MB-02-Gray/Pitcher-PureVis-MB-02-Gray.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630139/Pitcher-PureVis-MB-04-Gray/Pitcher-PureVis-MB-04-Gray.jpg?_i=AA"
         }
       ]
     },
     {
       "id": 3,
       "slug": "larq-bottle-swig-top-obsidian-black",
-      "main_img_url": "src/assets/img/drinkware-product1.webp",
+      "main_img_url": "/src/assets/img/drinkware-product1.webp",
       "title": "LARQ Bottle Swig Top",
       "shop": "drinkware",
       "description": {
@@ -78,81 +152,195 @@
         "short": "As our first wide-mouth water bottle, we made sure to provide extra room for loading up with ice. Plus, double-wall insulation means that water stays cold for up to 24 hours. Aah—"
       },
       "color": "Obsidian Black",
-      "price": 39.95,
-      "sizes": [23, 34],
+      "price": "39.00",
+      "payment_by_credit": "Or 4 interest-free installments of $9.99",
+      "stars": 4.3,
+      "review_count": "6160 reviews",
+      "sizes": [
+        {
+          "size": "23 oz"
+        },
+        {
+          "size": "34 oz"
+        }
+      ],
       "images": [
         "/src/assets/img/drinkware-product1.webp",
         "/src/assets/img/drinkware-product1.webp",
         "/src/assets/img/drinkware-product1.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
-      "skus": [
+      "colors": [
         {
-          "img_url": ""
+          "color_name": "Obsidian Black",
+          "hex_code": "#232323"
         },
         {
-          "img_url": ""
+          "color_name": "Granite White",
+          "hex_code": "#d1d1d0"
+        },
+        {
+          "color_name": "Eucalyptus Green",
+          "hex_code": "#5c7f71"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "/src/assets/img/drinkware-product1.webp"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1691764211/BNWOB068A-2/BNWOB068A-2.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1691764211/BNWOB068A-2/BNWOB068A-2.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1691764209/BNWOB068A-3/BNWOB068A-3.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1691764206/BNWOB068A-4/BNWOB068A-4.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1691764203/BNWOB068A-5/BNWOB068A-5.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1691764201/BNWOB068A-6/BNWOB068A-6.png?_i=AA"
         }
       ]
     },
     {
       "id": 4,
       "slug": "larq-bottle-filtered-obsidian-black",
-      "main_img_url": "src/assets/img/product-img3.webp",
+      "main_img_url": "/src/assets/img/product-img3.webp",
       "title": "LARQ Bottle Filtered",
       "shop": "purification",
       "description": {
         "long": "A revolutionary portable water filtration system that combines high-performance Nano Zero filter technology with zerovalent iron providing a seamless, low-pressure drinking experience."
       },
       "color": "Obsidian Black",
-      "price": 58.00,
+      "price": "58.00",
       "discounted_price": 49.95,
-      "sizes": [17, 25],
+      "payment_by_credit": "Or 4 interest-free installments if $12.49",
+      "sizes": [
+        {
+          "size": "17 oz"
+        },
+        {
+          "size": "25 oz"
+        }
+      ],
+      "insulation": [
+        {
+          "icon": "https://static.vecteezy.com/system/resources/thumbnails/000/353/173/small/Health__2821_29.jpg",
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "icon": "https://img.myloview.com/stickers/steel-thermos-icon-outline-steel-thermos-vector-icon-for-web-design-isolated-on-white-background-400-177311507.jpg",
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
+      ],
       "images": [
         "/src/assets/img/product-img3.webp",
         "/src/assets/img/product-img3.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
-      "skus": [
+      "colors": [
         {
-          "img_url": ""
+          "color_name": "Obsidian Black",
+          "hex_code": "#232323"
         },
         {
-          "img_url": ""
+          "color_name": "Granite White",
+          "hex_code": "#d1d1d0"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "/src/assets/img/product-img3.webp"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1642182213/filtered-17-ob-2/filtered-17-ob-2.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1642182217/filtered-17-ob-3/filtered-17-ob-3.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1642182214/filtered-17-ob-1/filtered-17-ob-1.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1642182217/filtered-17-ob-4/filtered-17-ob-4.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1642182216/filtered-17-ob-5/filtered-17-ob-5.jpg?_i=AA"
         }
       ]
     },
     {
       "id": 5,
       "slug": "larq-bottle-flip-top-obsidian-black",
-      "main_img_url": "src/assets/img/drinkware-product2.webp",
+      "main_img_url": "/src/assets/img/drinkware-product2.webp",
       "title": "LARQ Bottle Flip Top",
       "shop": "drinkware",
       "description": {
         "long": "The LARQ Bottle Flip Top features an easy-access straw so you can sip your hydration goals down with ease. It’s double-wall vacuum insulated to keep water cold for up to 24 hours and the silicone-coated detachable carabiner makes on-the-go hydration that much easier."
       },
       "color": "Obsidian Black",
-      "price": 39.95,
-      "sizes": [17, 25],
+      "price": "39.00",
+      "sizes": [
+        {
+          "size": "17 oz"
+        },
+        {
+          "size": "25 oz"
+        }
+      ],
       "images": [
         "/src/assets/img/drinkware-product2.webp",
         "/src/assets/img/drinkware-product2.webp",
         "/src/assets/img/drinkware-product2.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
-      "skus": [
+      "colors": [
         {
-          "img_url": ""
+          "color_name": "Obsidian Black",
+          "hex_code": "#232323"
         },
         {
-          "img_url": ""
+          "color_name": "Seaside Mint",
+          "hex_code": "#aac3c6"
+        },
+        {
+          "color_name": "Granite White",
+          "hex_code": "#d1d1d0"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "/src/assets/img/drinkware-product2.webp"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1685390153/BNSOB050A-2/BNSOB050A-2.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1685707276/Straw/Straw.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1685390151/BNSOB050A-3/BNSOB050A-3.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1685390149/BNSOB050A-4/BNSOB050A-4.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1685390146/BNSOB050A-5/BNSOB050A-5.png?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1685390144/BNSOB050A-6/BNSOB050A-6.png?_i=AA"
         }
       ]
     },
     {
       "id": 6,
       "slug": "larq-bottle-twist-top-monaco-blue",
-      "main_img_url": "src/assets/img/drinkware-product3.webp",
+      "main_img_url": "https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/w_900/v1685379792/SKU/SPA/v3/BNDMB050A.png",
       "title": "LARQ Bottle Twist Top",
       "shop": "drinkware",
       "description": {
@@ -160,8 +348,15 @@
         "short": "Note: The LARQ Bottle does not feature our built-in PureVis™ technology. Learn more about our LARQ Bottle with PureVis™ technology for on-the-go water purification here."
       },
       "color": "Monaco Blue",
-      "price": 29.95,
-      "sizes": [17, 25],
+      "price": "29.00",
+      "sizes": [
+        {
+          "size": "17 oz"
+        },
+        {
+          "size": "25 oz"
+        }
+      ],
       "images": [
         "/src/assets/img/drinkware-product3.webp",
         "/src/assets/img/drinkware-product3.webp",
@@ -169,20 +364,41 @@
         "/src/assets/img/drinkware-product3.webp",
         "/src/assets/img/drinkware-product3.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
-      "skus": [
+      "colors": [
         {
-          "img_url": ""
+          "color_name": "Monaco Blue",
+          "hex_code": "#234532"
         },
         {
-          "img_url": ""
+          "color_name": "Obsidian Black",
+          "hex_code": "#232323"
+        },
+        {
+          "color_name": "Seaside Mint",
+          "hex_code": "#aac3c6"
+        },
+        {
+          "color_name": "Granite White",
+          "hex_code": "#d1d1d0"
+        },
+        {
+          "color_name": "Himalayan Pink",
+          "hex_code": "#daaaaa"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/w_900/v1685379792/SKU/SPA/v3/BNDMB050A.png"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1611250611/p1-mb-17-4_2504aeaf5/p1-mb-17-4_2504aeaf5.jpg?_i=AA"
         }
       ]
     },
     {
       "id": 7,
       "slug": "larq-bottle-movement-purevis-monaco-blue",
-      "main_img_url": "src/assets/img/product-img2.webp",
+      "main_img_url": "/src/assets/img/product-img2.webp",
       "title": "LARQ Bottle Movement PureVis™",
       "shop": "purification",
       "description": {
@@ -190,8 +406,30 @@
         "short": "*Based on elimination 99.8% of E.coli in a 20-second cycle for all LARQ Bottles."
       },
       "color": "Obsidian Black",
-      "price": 89.00,
-      "sizes": [24, 32],
+      "price": "89.00",
+      "stars": 4.3,
+      "review_count": "6160 reviews",
+      "payment_by_credit": "Or 4 interest-free installments if $22.25",
+      "insulation": [
+        {
+          "icon": "",
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "icon": "",
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "24 oz"
+        },
+        {
+          "size": "32 oz"
+        }
+      ],
       "images": [
         "/src/assets/img/product-img1.webp",
         "/src/assets/img/product-img2.webp",
@@ -199,29 +437,50 @@
         "/src/assets/img/drinkware-product1.webp",
         "/src/assets/img/drinkware-product2.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
+      "colors": [
+        "#234532",
+        "#234532",
+        "#234532"
+      ],
       "skus": [
         {
-          "img_url": ""
+          "img_url": "/src/assets/img/product-img2.webp"
         },
         {
-          "img_url": ""
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607537615/p1-bo-24-1/p1-bo-24-1.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607537620/p1-bo-24-4/p1-bo-24-4.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607537619/p1-bo-24-6/p1-bo-24-6.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1620409874/BSBO071A-4/BSBO071A-4.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607537618/p1-bo-24-7/p1-bo-24-7.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607537618/p1-bo-24-8/p1-bo-24-8.jpg?_i=AA"
         }
       ]
     },
     {
       "id": 8,
       "slug": "larq-pitcher-purevis-pure-white",
-      "main_img_url": "src/assets/img/home-product2.webp",
+      "main_img_url": "/src/assets/img/home-product2.webp",
       "title": "LARQ Pitcher PureVis™",
       "shop": "home",
       "description": {
         "long": "The LARQ Pitcher uses a unique 2-step process to improve the quality of your water using PureVis™ and Nano Zero filter technology–giving you fresh-tasting water sip after sip."
       },
       "color": "Pure White",
-      "price": 168.00,
-      "discounted_price": 139.00,
-      "sizes": [17, 25],
+      "price": "168.00",
+      "discounted_price": 139,
+      "payment_by_credit": "Or 4 interest-free installments if $34.75",
+      "stars": 4.3,
+      "review_count": "6160 reviews",
       "images": [
         "/src/assets/img/product-img1.webp",
         "/src/assets/img/product-img2.webp",
@@ -229,15 +488,31 @@
         "/src/assets/img/drinkware-product1.webp",
         "/src/assets/img/drinkware-product2.webp"
       ],
-      "colors": ["#234532", "#234532", "#234532"],
-      "skus": [
+      "colors": [
         {
-          "img_url": ""
+          "color_name": "Monaco Blue",
+          "hex_code": "#234532"
         },
         {
-          "img_url": ""
+          "color_name": "Pure White",
+          "hex_code": "#fff"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "/src/assets/img/home-product2.webp"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630138/Pitcher-PureVis-PW-03-Gray/Pitcher-PureVis-PW-03-Gray.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630138/Pitcher-PureVis-PW-02-Gray/Pitcher-PureVis-PW-02-Gray.jpg?_i=AA"
+        },
+        {
+          "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630137/Pitcher-PureVis-PW-04-Gray/Pitcher-PureVis-PW-04-Gray.jpg?_i=AA"
         }
       ]
     }
-  ]
+  ],
+  "cart": []
 }

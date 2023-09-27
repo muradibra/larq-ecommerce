@@ -19,10 +19,31 @@
   --primary-blue: #153a5b;
 }
 
+.swiper-btn-prev.swiper-button-disabled,
+.swiper-btn-next.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+  button {
+    border: none;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    svg {
+      color: var(--primary-blue);
+      font-size: 20px;
+    }
+  }
+}
+
 .home {
   position: relative;
   padding-bottom: 20px;
-  // padding: var(-primary-padding);
 
   .home-main-img {
     background-image: url(../img/home-img.webp);
@@ -55,6 +76,7 @@
     .text {
       position: absolute;
       z-index: 200;
+      padding-right: 4rem;
       h1 {
         font-size: clamp(1.875rem, 0.268rem + 7.143vw, 3.75rem);
         margin-bottom: clamp(1.875rem, 1.667rem + 0.926vw, 2.5rem);
@@ -161,13 +183,6 @@
     }
 
     .review-swiper-wrapper {
-      // .swiper-button-prev {
-      //   background-image: url(../img/bg-img.webp) !important;
-      // }
-      // .swiper-button-prev:after {
-      //   content: "";
-      // }
-
       .slide-inner {
         padding: 24px;
         display: flex;
@@ -265,9 +280,6 @@
       row-gap: 4.6rem;
 
       .features-section {
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
         .features-img {
           width: 13%;
           margin: 0 auto;
@@ -297,7 +309,7 @@
 
   .products-swiper-wrapper {
     padding: 0 var(--primary-padding);
-    margin-top: 40px;
+    margin: 40px 0;
 
     .swiper-wrapper {
       gap: 15px;
@@ -305,6 +317,10 @@
 
     .swiper {
       position: relative;
+
+      .swiper-button-disabled {
+        display: none;
+      }
 
       .swiper-btn-prev {
         position: absolute;
@@ -316,7 +332,7 @@
       .swiper-btn-next {
         position: absolute;
         top: 40%;
-        right: 0;
+        right: 1px;
         z-index: 999;
       }
     }
@@ -373,6 +389,120 @@
     }
   }
 
+  .our-mission {
+    .bg-img-wrapper {
+      background-image: url(../img/our-mission-mobile.webp);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      color: #fff;
+      flex-direction: column-reverse;
+      position: relative;
+      padding-left: clamp(
+        1.6rem,
+        calc(1.6rem + (56) * ((100vw - 428px) / (1920 - 428))),
+        5.33333rem
+      );
+      padding-right: clamp(
+        1.6rem,
+        calc(1.6rem + (56) * ((100vw - 428px) / (1920 - 428))),
+        5.33333rem
+      );
+      padding-bottom: clamp(2.5rem, 1.429rem + 4.762vw, 3.75rem);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(21, 58, 91, 0) 0%,
+          rgba(21, 58, 91, 0) 33.33%,
+          rgba(21, 58, 91, 0.1) 66.67%,
+          rgba(21, 58, 91, 0.8) 100%
+        );
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 99999;
+
+        .title {
+          font-size: clamp(
+            1.06667rem,
+            calc(1.06667rem + (4) * ((100vw - 428px) / (1920 - 428))),
+            1.33333rem
+          );
+          line-height: clamp(
+            1.6rem,
+            calc(1.6rem + (8) * ((100vw - 428px) / (1920 - 428))),
+            2.13333rem
+          );
+          margin-bottom: clamp(0.469rem, 0.284rem + 0.379vw, 0.625rem);
+        }
+
+        .headline {
+          h2 {
+            font-size: clamp(
+              2.13333rem,
+              calc(2.13333rem + (48) * ((100vw - 428px) / (1920 - 428))),
+              5.33333rem
+            );
+            margin-top: 0;
+            margin-bottom: clamp(1.875rem, 1.667rem + 0.926vw, 2.5rem);
+          }
+        }
+
+        .description {
+          font-size: 1.33333rem;
+          line-height: 2.13333rem;
+          letter-spacing: 0.00133rem;
+          max-width: 37.33333rem;
+          opacity: 0.9;
+        }
+
+        .learn-more {
+          margin-top: 20px;
+          button {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 15px;
+            cursor: pointer;
+            color: var(--primary-blue);
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 0.8rem 1.06667rem;
+            border: none;
+            outline: none;
+            transition: 0.8s;
+            font-weight: 700;
+
+            &:hover {
+              scale: 1.03;
+              gap: 18px !important;
+              svg {
+                color: var(--primary-blue) !important;
+              }
+            }
+
+            svg {
+              color: #5a5e60;
+              transition: 0.8s;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .basq-magazines {
     padding: 0 var(--primary-padding);
     // padding-left: var(--primary-padding);
@@ -417,12 +547,12 @@
         }
       }
 
-      .magazine-swiper {
+      .magazine-swiper-wrapper {
         .swiper {
           position: relative;
 
           .swiper-btn-prev {
-            display: none;
+            // display: none;
             position: absolute;
             top: 40%;
             left: 0;
@@ -430,7 +560,7 @@
           }
 
           .swiper-btn-next {
-            display: none;
+            // display: none;
             position: absolute;
             top: 40%;
             right: 0;
@@ -520,6 +650,12 @@
       }
     }
   }
+
+  .our-mission {
+    .bg-img-wrapper {
+      background-image: url(../img/our_mission-desktop.webp) !important;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -555,13 +691,13 @@
     }
   }
 
-  .magazine-swiper {
-    .swiper-btn-prev {
-      display: block !important;
-    }
+  // .magazine-swiper {
+  //   .swiper-btn-prev {
+  //     display: block !important;
+  //   }
 
-    .swiper-btn-next {
-      display: block !important;
-    }
-  }
+  //   .swiper-btn-next {
+  //     display: block !important;
+  //   }
+  // }
 }

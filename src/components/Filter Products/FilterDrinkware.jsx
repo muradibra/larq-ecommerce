@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchProducts } from '../../features/productsSlice/productsSlice'
+import { fetchProducts } from '../../slices/productsSlice/productsSlice'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Scrollbar } from 'swiper/modules'
 import { Link } from 'react-router-dom'

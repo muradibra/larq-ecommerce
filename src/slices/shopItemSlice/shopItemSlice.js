@@ -3,7 +3,7 @@ import axios from "axios"
 import { apiUrl } from "../../config"
 
 const initialState = {
-    item: [],
+    shopItem: [],
     isLoading: false,
     success: false
 }
@@ -28,7 +28,7 @@ export const shopItemSlice = createSlice({
         builder.addCase(fetchProductDetails.fulfilled, (state, action) => {
             state.isLoading = false
             state.success = true
-            state.item = action.payload
+            state.shopItem = action.payload
         })
         builder.addCase(fetchProductDetails.rejected, (state, action) => {
             state.isLoading = false

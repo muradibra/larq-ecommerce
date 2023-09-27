@@ -11,9 +11,12 @@ export const sideMenuSlice = createSlice({
     reducers: {
         toggleSideMenu: (state) => {
             state.isSideMenuOpen = !state.isSideMenuOpen
+            document.querySelector(".header").classList.add("visible")
+            document.querySelector(".header").classList.remove("hidden")
         },
         toggleCart: (state) => {
             state.isCartOpen = !state.isCartOpen
+            
         }
     }
 })

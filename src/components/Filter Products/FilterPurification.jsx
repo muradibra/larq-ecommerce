@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { fetchProducts } from '../../features/productsSlice/productsSlice'
+import { fetchProducts } from '../../slices/productsSlice/productsSlice'
 import { Swiper, SwiperSlide } from 'swiper/react'
 // import Swiper from 'swiper'
 import { Scrollbar } from 'swiper/modules'
@@ -49,7 +49,7 @@ function FilterPurification() {
                       {
                         product.discounted_price ?
                           <span>
-                            $<del>{product.price}</del> {product.discounted_price}
+                            $<del>{product.price}</del> ${product.discounted_price}
                           </span>
                           :
                           <span>${product.price}</span>

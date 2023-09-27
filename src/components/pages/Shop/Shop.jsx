@@ -1,4 +1,3 @@
-import SideMenu from '../../layout/SideMenu'
 import category_img1 from '../../../assets/img/category-img1.webp'
 import category_img2 from '../../../assets/img/category-img2.webp'
 import category_img3 from '../../../assets/img/category-img3.webp'
@@ -8,62 +7,46 @@ import { Navigation, Scrollbar } from 'swiper/modules'
 import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchProducts } from '../../../features/productsSlice/productsSlice'
+import { fetchProducts } from '../../../slices/productsSlice/productsSlice'
 import FilterPurification from '../../Filter Products/FilterPurification'
 import FilterHome from '../../Filter Products/FilterHome'
 import FilterDrinkware from '../../Filter Products/FilterDrinkware'
-import sideImg1_clean from '../../../assets/img/sideImg1-clean.jpg'
-import sideImg2_clean from '../../../assets/img/sideImg2-clean.jpg'
-import sideImg3_clean from '../../../assets/img/sideImg3-clean.jpg'
+import PortabelPurificationSlogan from './PortabelPurificationSlogan';
+import AtHomePurificationSlogan from './AtHomePurificationSlogan';
+import OnTheGoHydrationSlogan from './OnTheGoHydrationSlogan';
 
 function Shop() {
   const purificationRef = useRef(null)
   const homeRef = useRef(null)
   const drinkwareRef = useRef(null)
-  const { products } = useSelector(store => store.products)
+  const primaryRef = useRef(null)
+  // const { products } = useSelector(store => store.products)
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(fetchProducts())
   }, [])
 
-  // const purificationProducts = productsv2.filter(item => item.shop === "purification")
-  // console.log("purification", purificationProducts[0].purification);
-
-  // const scrollToPurification = () => {
-  //   const purificationDiv = document.getElementById('purification');
-  //   if (purificationDiv) {
-  //     purificationDiv.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   dispatch(getProducts())
-  // }, [])
-
-
-
   const scrollToPurification = () => {
     if (purificationRef.current) {
-      purificationRef.current.scrollIntoView()
+      purificationRef.current.scrollIntoView({ behavior: "smooth" })
     }
   }
 
   const scrollToHome = () => {
     if (homeRef.current) {
-      homeRef.current.scrollIntoView()
+      homeRef.current.scrollIntoView({ behavior: "smooth" })
     }
   }
 
   const scrollToDrinkware = () => {
     if (drinkwareRef.current) {
-      drinkwareRef.current.scrollIntoView()
+      drinkwareRef.current.scrollIntoView({ behavior: "smooth" })
     }
   }
 
   return (
     <div className='shop'>
-      <SideMenu />
 
       <div className='shop-all'>
 
@@ -127,24 +110,7 @@ function Shop() {
 
       </div>
 
-      <div className="slogan portable-purification">
-
-        <div className='content-card bg-1'>
-          <div className="content-card-label">
-            Portable purification
-          </div>
-          <h2 className='content-card-title'>
-            Make refills a breeze
-          </h2>
-          <p className='content-card-description'>
-            PureVis™ and Nano Zero technology improves water quality for a brilliant hydration experience on the go.
-          </p>
-        </div>
-
-        <div className='media-card'>
-          <img src={sideImg1_clean} alt="Portable Purification" />
-        </div>
-      </div>
+      <PortabelPurificationSlogan />
 
       <div className='shopping-sections home' ref={homeRef}>
         <div className='description'>
@@ -158,25 +124,7 @@ function Shop() {
         </div>
       </div>
 
-      <div className="slogan at-home-purification">
-
-        <div className='content-card bg-2'>
-          <div className="content-card-label">
-            At-home purification
-          </div>
-          <h2 className='content-card-title'>
-            Who said practical had to be boring?
-          </h2>
-          <p className='content-card-description'>
-            Nano Zero Filter technology delivers better-tasting coffee, tea, smoothies—everything—and looks good doing it.
-          </p>
-        </div>
-
-        <div className='media-card'>
-          <img src={sideImg2_clean} alt="Portable Purification" />
-        </div>
-      </div>
-
+      <AtHomePurificationSlogan />
 
       <div className='shopping-sections drinkware' ref={drinkwareRef}>
         <div className='description'>
@@ -189,24 +137,7 @@ function Shop() {
         </div>
       </div>
 
-      <div className="slogan on-the-go-hydration">
-
-        <div className='content-card bg-3'>
-          <div className="content-card-label">
-            On-the-go hydration
-          </div>
-          <h2 className='content-card-title'>
-            Hydration never looked so good
-          </h2>
-          <p className='content-card-description'>
-            Stylish and sustainable. We'll drink to that.
-          </p>
-        </div>
-
-        <div className='media-card'>
-          <img src={sideImg3_clean} alt="Portable Purification" />
-        </div>
-      </div>
+      <OnTheGoHydrationSlogan />
 
     </div>
   )

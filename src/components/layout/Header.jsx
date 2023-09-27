@@ -4,10 +4,13 @@ import { BsCart3 } from 'react-icons/bs'
 import { AiOutlineClose, AiOutlineArrowRight } from 'react-icons/ai'
 import Logo from '../lib/Logo';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleCart, toggleSideMenu } from '../../features/sideMenuSlice/sideMenuSlice';
+import { toggleCart, toggleSideMenu } from '../../slices/sideMenuSlice/sideMenuSlice';
 import { AppContext } from '../../context/appContext';
 import { Link, useNavigate } from 'react-router-dom';
-import Cart from './Cart';
+import Cart from '../lib/Cart';
+import sideImg1_clean from '../../assets/img/sideImg1-clean.jpg'
+import sideImg2_clean from '../../assets/img/sideImg2-clean.jpg'
+import sideImg3_clean from '../../assets/img/sideImg3-clean.jpg'
 
 
 const Header = () => {
@@ -22,6 +25,14 @@ const Header = () => {
     const [showPurificationSection, setShowPurificationSection] = useState(false);
     const [showHomeSection, setShowHomeSection] = useState(false);
     const [showDrinkwareSection, setShowDrinkwareSection] = useState(false);
+    const [isCartVisible, setIsCartVisible] = useState(false);
+    const { cartData } = useSelector(store => store.cartData)
+
+    const getCartLength = () => {
+        if (cartData.length) {
+            return cartData.reduce((accumulator, currentValue) => accumulator + currentValue.quantity, 0)
+        }
+    }
 
 
     useEffect(() => {
@@ -30,31 +41,37 @@ const Header = () => {
             setVisible(prevScrollPos > currentScrollPos);
             setPrevScrollPos(currentScrollPos);
         }
-        // if (!isSideMenuOpen) {
-        window.addEventListener('scroll', handleScroll);
-        // }
+        if (!isSideMenuOpen) {
+            window.addEventListener('scroll', handleScroll);
+        }
 
-        return () => {
-            // if (isSideMenuOpen) {
+        // return () => {
+        if (isSideMenuOpen) {
             window.removeEventListener('scroll', handleScroll);
-            // }
-        };
+            setVisible(true)
+        }
+        // };
     }, [prevScrollPos]);
 
-    
+
 
     const handleCartIconClick = () => {
         dispatch(toggleCart());
+        setIsCartVisible(!isCartVisible)
+        // document.querySelector('.header').classList.add("visible")
+        // document.querySelector('.header').classList.remove("hidden")
     };
 
     return (
         <div className={`header ${visible ? 'visible' : 'hidden'}`}>
-            <Cart />
-            
+
             <div className="header-content">
                 <div
                     className='icon'
-                    onClick={() => dispatch(toggleSideMenu())}
+                    onClick={() => {
+                        dispatch(toggleSideMenu())
+                        document.querySelector(".header").classList.add("visible")
+                    }}
                 >
                     {
                         isSideMenuOpen ?
@@ -70,7 +87,7 @@ const Header = () => {
                         onMouseEnter={() => setShowShopAllSection(true)}
                         onMouseLeave={() => setTimeout(() => {
                             setShowShopAllSection(false)
-                        }, 50)}
+                        }, 80)}
                     >
                         <Link to='/shop'>
                             SHOP ALL
@@ -163,7 +180,7 @@ const Header = () => {
                         onMouseLeave={() => {
                             setTimeout(() => {
                                 setShowPurificationSection(false)
-                            }, 50)
+                            }, 80)
                         }
                         }
                     >
@@ -217,9 +234,9 @@ const Header = () => {
 
                                 <div className='products'>
                                     <div className='product-img product-img1'>
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
+                                        <div className='sideImg1'>
+                                            {/* <img src={sideImg1_clean} alt="" /> */}
+                                        </div>
                                         <div className='text'>
                                             <h4>LARQ Bottle PureVis™</h4>
                                             <span>From $99</span>
@@ -259,7 +276,7 @@ const Header = () => {
                         onMouseLeave={() => {
                             setTimeout(() => {
                                 setShowHomeSection(false)
-                            }, 50)
+                            }, 80)
                         }}
                     >
                         <Link to='/shop?shop=home'>
@@ -348,7 +365,7 @@ const Header = () => {
                         onMouseLeave={() => {
                             setTimeout(() => {
                                 setShowDrinkwareSection(false)
-                            }, 50)
+                            }, 80)
                         }}
                     >
                         <Link to='/shop?shop=drinkware'>
@@ -452,7 +469,14 @@ const Header = () => {
                     >
                         LOG OUT
                     </li>
-                    <li onClick={() => dispatch(toggleCart())}>CART</li>
+                    <li className='cart-length' onClick={() => dispatch(toggleCart())}>
+                        CART
+                        {
+                            cartData.length > 0 &&
+                            <span>{getCartLength()}</span>
+                        }
+
+                    </li>
                 </ul>
 
                 <div
@@ -460,6 +484,14 @@ const Header = () => {
                     onClick={handleCartIconClick}
                 >
                     <BsCart3 />
+                    {
+                        cartData.length > 0 &&
+                        <span className='cart-length'>
+                            {
+                                getCartLength()
+                            }
+                        </span>
+                    }
                 </div>
             </div>
 

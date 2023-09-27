@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { AppContext } from '../../../context/appContext'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchUsers } from '../../../features/usersSlice/usersSlice'
+import { fetchUsers } from '../../../slices/usersSlice/usersSlice'
 import { useNavigate } from 'react-router-dom'
 
 function Login() {

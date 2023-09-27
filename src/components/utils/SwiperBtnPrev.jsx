@@ -11,8 +11,7 @@ function SwiperBtnPrev() {
         <div
             className='swiper-btn-prev'
             // style={{
-            //     position: "relative",
-            //     // display: isOnFirstSlide ? "none" : "block"
+            //     display: isOnFirstSlide ? "none" : "block"
             // }}
         >
             <button
@@ -24,11 +23,8 @@ function SwiperBtnPrev() {
                     padding: "5px",
                     width: "40px",
                     height: "40px",
-                    // position: "absolute",
-                    // zIndex: "999",
-                    // left: "",
-                    // bottom: "200px"
                 }}
+                // disabled={swiper.isBeginning}
                 onClick={() => swiper.slidePrev()}
             >
                 <BsArrowLeft />

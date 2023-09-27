@@ -5,12 +5,16 @@
 @import "./_cart";
 @import "./_footer";
 @import "./_shop";
-@import './_productDetails';
+@import "./_productDetails";
 
 body {
   font-family: "Open Sans", sans-serif;
   &.menu-open {
     overflow: hidden;
+  }
+
+  &.cart-open {
+    overflow-y: hidden;
   }
 }
 
@@ -26,4 +30,8 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
 }

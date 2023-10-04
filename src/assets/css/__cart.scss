@@ -139,6 +139,8 @@
           }
         }
 
+        
+
         .decrement {
           border-radius: 50% 0 0 50%;
 
@@ -161,6 +163,12 @@
 
         .increment {
           border-radius: 0 50% 50% 0;
+
+          &.increment-disabled {
+            svg {
+              color: rgb(204, 204, 204);
+            }
+          }
         }
       }
     }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addToCart, updateCart } from '../../../slices/cartDataSlice/cartDataSlice'
+import { addToCart, updateCart } from '../../../../slices/cartDataSlice/cartDataSlice'
+import toast from 'react-hot-toast'
 
 function PurchaseButtons({ product }) {
     const dispatch = useDispatch()
@@ -10,12 +11,13 @@ function PurchaseButtons({ product }) {
         const existProduct = cartData.find(item => item.id === product.id)
 
         if (existProduct) {
-            console.log("existProduct", existProduct)
+            // console.log("existProduct", existProduct)
             const newQuantity = existProduct.quantity + 1
 
             const updatedProduct = { ...existProduct, quantity: newQuantity }
             dispatch(updateCart(updatedProduct))
-            console.log("cartData", cartData)
+            toast.success("Product count updated!")
+            // console.log("cartData", cartData)
             return
         }
 
@@ -30,6 +32,7 @@ function PurchaseButtons({ product }) {
                 slug: product.slug,
             }
         ))
+        toast.success("Product added to cart!")
 
     }
 

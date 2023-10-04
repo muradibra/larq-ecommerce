@@ -3,9 +3,32 @@
     {
       "id": 1,
       "fullname": "Murad Ibrahimov",
-      "username": "muradibra",
-      "password": "nihadmurad",
+      "first_name": "Murad",
+      "last_name": "Ibrahimov",
+      "country": "Azerbaijan",
+      "address_1": "address 1",
+      "address_2": "address 2",
+      "company_name": "",
+      "suburb_or_city": "Baku",
+      "state_or_province": "Azerbaijan",
+      "zip_code": "AZ1107",
+      "phone_number": "+994-658-560-6565",
+      "password": "Nihadmurad123",
       "email": "muradibrahimov495@gmail.com"
+    },
+    {
+      "email": "muradibrahimov7337@gmail.com",
+      "password": "Murad2410",
+      "country": "Trinidad and Tobago",
+      "first_name": "Zachery",
+      "last_name": "Ashley",
+      "address_1": "84 Green Fabien Street",
+      "address_2": "Veniam voluptates d",
+      "suburb_or_city": "Proident laborum S",
+      "state_or_province": "Consectetur voluptat",
+      "zip": "13264",
+      "phone_number": "+1 (954) 162-9906",
+      "id": 2
     }
   ],
   "products": [
@@ -95,6 +118,33 @@
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607536828/p1-mb-17-8/p1-mb-17-8.jpg?_i=AA"
         }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
       ]
     },
     {
@@ -138,6 +188,33 @@
         },
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630139/Pitcher-PureVis-MB-04-Gray/Pitcher-PureVis-MB-04-Gray.jpg?_i=AA"
+        }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
         }
       ]
     },
@@ -205,6 +282,33 @@
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1691764201/BNWOB068A-6/BNWOB068A-6.png?_i=AA"
         }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
       ]
     },
     {
@@ -218,7 +322,7 @@
       },
       "color": "Obsidian Black",
       "price": "58.00",
-      "discounted_price": 49.95,
+      "discounted_price": "49.95",
       "payment_by_credit": "Or 4 interest-free installments if $12.49",
       "sizes": [
         {
@@ -272,6 +376,33 @@
         },
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1642182216/filtered-17-ob-5/filtered-17-ob-5.jpg?_i=AA"
+        }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
         }
       ]
     },
@@ -335,6 +466,33 @@
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1685390144/BNSOB050A-6/BNSOB050A-6.png?_i=AA"
         }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
       ]
     },
     {
@@ -393,6 +551,33 @@
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1611250611/p1-mb-17-4_2504aeaf5/p1-mb-17-4_2504aeaf5.jpg?_i=AA"
         }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
       ]
     },
     {
@@ -438,9 +623,18 @@
         "/src/assets/img/drinkware-product2.webp"
       ],
       "colors": [
-        "#234532",
-        "#234532",
-        "#234532"
+        {
+          "color_name": "Obsidian Black",
+          "hex_code": "#232323"
+        },
+        {
+          "color_name": "Seaside Mint",
+          "hex_code": "#aac3c6"
+        },
+        {
+          "color_name": "Granite White",
+          "hex_code": "#d1d1d0"
+        }
       ],
       "skus": [
         {
@@ -464,6 +658,33 @@
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1607537618/p1-bo-24-8/p1-bo-24-8.jpg?_i=AA"
         }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
       ]
     },
     {
@@ -477,7 +698,7 @@
       },
       "color": "Pure White",
       "price": "168.00",
-      "discounted_price": 139,
+      "discounted_price": "139.00",
       "payment_by_credit": "Or 4 interest-free installments if $34.75",
       "stars": 4.3,
       "review_count": "6160 reviews",
@@ -511,8 +732,254 @@
         {
           "img_url": "https://res.cloudinary.com/larq/image/fetch/q_auto,f_auto/https://res.cloudinary.com/larq/images/f_auto,q_auto/v1676630137/Pitcher-PureVis-PW-04-Gray/Pitcher-PureVis-PW-04-Gray.jpg?_i=AA"
         }
+      ],
+      "faq": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
       ]
     }
   ],
-  "cart": []
+  "cart": [],
+  "faqs": [
+    {
+      "id": 1,
+      "product": "LARQ Bottle PureVis",
+      "product_faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "product": "LARQ Pitcher PureVis",
+      "product_faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "product": "LARQ Bottle Swig Top",
+      "product_faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "product": "LARQ Bottle Filtered",
+      "product_faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "product": "LARQ Bottle Flip Top",
+      "product_faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "product": "LARQ Bottle Twist Top",
+      "product_faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "product": "LARQ Bottle Movement PureVis",
+      "product_faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    }
+  ]
 }

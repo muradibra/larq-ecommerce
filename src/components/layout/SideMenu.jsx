@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { useEffect } from 'react'
 import { toggleSideMenu } from '../../slices/sideMenuSlice/sideMenuSlice'
+import { AppContext } from '../../context/appContext'
+import toast from 'react-hot-toast'
 
 function SideMenu() {
   const { isSideMenuOpen } = useSelector(store => store.side)
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  const { setIsAuth } = useContext(AppContext)
+
 
   useEffect(() => {
     if (isSideMenuOpen) {
@@ -18,6 +22,14 @@ function SideMenu() {
       document.body.classList.remove('menu-open');
     }
   }, [isSideMenuOpen]);
+
+  const logOut = () => {
+    localStorage.removeItem("isAuth")
+    setIsAuth(false)
+    toast.loading("You are logged out!")
+    dispatch(toggleSideMenu())
+    navigate('/')
+  }
 
   return (
     <div className={`side-menu ${!isSideMenuOpen ? "isClosed" : "isOpen"}`}>
@@ -89,11 +101,7 @@ function SideMenu() {
               <Link to='/support'>FAQ</Link>
             </li>
             <li>
-              <button onClick={() => {
-                localStorage.removeItem("isAuth")
-                setIsAuth(false)
-                navigate('/')
-              }}
+              <button onClick={() => logOut()}
               >
                 Log out
               </button>

@@ -6,11 +6,12 @@ import Logo from '../lib/Logo';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart, toggleSideMenu } from '../../slices/sideMenuSlice/sideMenuSlice';
 import { AppContext } from '../../context/appContext';
-import { Link, useNavigate } from 'react-router-dom';
-import Cart from '../lib/Cart';
-import sideImg1_clean from '../../assets/img/sideImg1-clean.jpg'
-import sideImg2_clean from '../../assets/img/sideImg2-clean.jpg'
-import sideImg3_clean from '../../assets/img/sideImg3-clean.jpg'
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import toast from 'react-hot-toast';
+// import Cart from '../lib/Cart';
+// import sideImg1_clean from '../../assets/img/sideImg1-clean.jpg'
+// import sideImg2_clean from '../../assets/img/sideImg2-clean.jpg'
+// import sideImg3_clean from '../../assets/img/sideImg3-clean.jpg'
 
 
 const Header = () => {
@@ -27,13 +28,6 @@ const Header = () => {
     const [showDrinkwareSection, setShowDrinkwareSection] = useState(false);
     const [isCartVisible, setIsCartVisible] = useState(false);
     const { cartData } = useSelector(store => store.cartData)
-
-    const getCartLength = () => {
-        if (cartData.length) {
-            return cartData.reduce((accumulator, currentValue) => accumulator + currentValue.quantity, 0)
-        }
-    }
-
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,7 +47,11 @@ const Header = () => {
         // };
     }, [prevScrollPos]);
 
-
+    const getCartLength = () => {
+        if (cartData.length) {
+            return cartData.reduce((accumulator, currentValue) => accumulator + currentValue.quantity, 0)
+        }
+    }
 
     const handleCartIconClick = () => {
         dispatch(toggleCart());
@@ -61,6 +59,13 @@ const Header = () => {
         // document.querySelector('.header').classList.add("visible")
         // document.querySelector('.header').classList.remove("hidden")
     };
+
+    const logOut = () => {
+        localStorage.removeItem("isAuth")
+        setIsAuth(false)
+        navigate('/')
+        toast.loading("You are logged out!")
+    }
 
     return (
         <div className={`header ${visible ? 'visible' : 'hidden'}`}>
@@ -233,7 +238,10 @@ const Header = () => {
                                 </div>
 
                                 <div className='products'>
-                                    <div className='product-img product-img1'>
+                                    <div
+                                        className='product-img product-img1'
+                                        onClick={() => navigate('/product/larq-bottle-purevis-monaco-blue')}
+                                    >
                                         <div className='sideImg1'>
                                             {/* <img src={sideImg1_clean} alt="" /> */}
                                         </div>
@@ -243,7 +251,10 @@ const Header = () => {
                                         </div>
                                     </div>
 
-                                    <div className='product-img product-img2'>
+                                    <div
+                                        className='product-img product-img2'
+                                        onClick={() => navigate('/product/larq-bottle-movement-purevis-monaco-blue')}
+                                    >
                                         {/* <div className='sideImg1'>
                                             <img src={sideImg1_clean} alt="" />
                                         </div> */}
@@ -253,7 +264,10 @@ const Header = () => {
                                         </div>
                                     </div>
 
-                                    <div className='product-img product-img3'>
+                                    <div
+                                        className='product-img product-img3'
+                                        onClick={() => navigate('/product/larq-bottle-filtered-obsidian-black')}
+                                    >
                                         {/* <div className='sideImg1'>
                                             <img src={sideImg1_clean} alt="" />
                                         </div> */}
@@ -328,7 +342,10 @@ const Header = () => {
                                 </div>
 
                                 <div className='home-products'>
-                                    <div className='home-product-img home-product-img1'>
+                                    <div
+                                        className='home-product-img home-product-img1'
+                                        onClick={() => navigate('/product/larq-pitcher-purevis-monaco-blue')}
+                                    >
                                         {/* <div className='sideImg1'>
                                             <img src={sideImg1_clean} alt="" />
                                         </div> */}
@@ -339,8 +356,11 @@ const Header = () => {
                                         </div>
                                     </div>
 
-                                    <div className='home-product-img home-product-img2'>
-                                        {/* <div className='sideImg1'>
+                                    <div
+                                        className='home-product-img home-product-img2'
+                                        onClick={() => navigate('/product/larq-pitcher-purevis-pure-white')}
+                                    >
+                                        {/* <div className='sideImg1'>11
                                             <img src={sideImg1_clean} alt="" />
                                         </div> */}
                                         <div className='text'>
@@ -417,7 +437,11 @@ const Header = () => {
                                 </div>
 
                                 <div className='drinkware-products'>
-                                    <div className='drinkware-product-img drinkware-product-img1'>
+                                    <div
+                                        className='drinkware-product-img drinkware-product-img1'
+                                        onClick={() => navigate('/product/larq-bottle-swig-top-obsidian-black')}
+                                    >
+                                        {/* <Link to={'/product/larq-bottle-swig-top-obsidian-black'}> */}
                                         {/* <div className='sideImg1'>
                                             <img src={sideImg1_clean} alt="" />
                                         </div> */}
@@ -425,9 +449,14 @@ const Header = () => {
                                             <h4>LARQ Bottle Swig Top</h4>
                                             <span>From $99</span>
                                         </div>
+                                        {/* </Link> */}
                                     </div>
 
-                                    <div className='drinkware-product-img drinkware-product-img2'>
+                                    <div
+                                        className='drinkware-product-img drinkware-product-img2'
+                                        onClick={() => navigate('/product/larq-bottle-flip-top-obsidian-black')}
+                                    >
+                                        {/* <Link to={'/product/larq-bottle-flip-top-obsidian-black'}> */}
                                         {/* <div className='sideImg1'>
                                             <img src={sideImg1_clean} alt="" />
                                         </div> */}
@@ -435,9 +464,14 @@ const Header = () => {
                                             <h4>LARQ Bottle Flip Top</h4>
                                             <span>From $89</span>
                                         </div>
+                                        {/* </Link> */}
                                     </div>
 
-                                    <div className='drinkware-product-img drinkware-product-img3'>
+                                    <div
+                                        className='drinkware-product-img drinkware-product-img3'
+                                        onClick={() => navigate('/product/larq-bottle-twist-top-monaco-blue')}
+                                    >
+                                        {/* <Link to={'/product/larq-bottle-twist-top-monaco-blue'}> */}
                                         {/* <div className='sideImg1'>
                                             <img src={sideImg1_clean} alt="" />
                                         </div> */}
@@ -445,6 +479,7 @@ const Header = () => {
                                             <h4>LARQ Bottle Twist Top</h4>
                                             <span>From $89</span>
                                         </div>
+                                        {/* </Link> */}
                                     </div>
 
                                 </div>
@@ -461,15 +496,13 @@ const Header = () => {
                 <ul className='navigation'>
                     <li>TECHNOLOGY</li>
                     <li>FAQ</li>
-                    <li onClick={() => {
-                        localStorage.removeItem("isAuth")
-                        setIsAuth(false)
-                        navigate('/')
-                    }}
-                    >
+                    <li onClick={() => logOut()}>
                         LOG OUT
                     </li>
-                    <li className='cart-length' onClick={() => dispatch(toggleCart())}>
+                    <li
+                        className='cart-length'
+                        onClick={() => dispatch(toggleCart())}
+                    >
                         CART
                         {
                             cartData.length > 0 &&

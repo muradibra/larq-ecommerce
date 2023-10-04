@@ -1,7 +1,7 @@
 import React from 'react'
-import FiltrationForAllSvg from '../../lib/FiltrationForAllSvg'
-import useScreenWidth from '../../../hooks/useScreenWidth'
-import PureTastingWaterSvg from '../../lib/PureTastingWaterSvg'
+import FiltrationForAllSvg from '../../../lib/FiltrationForAllSvg'
+import useScreenWidth from '../../../../hooks/useScreenWidth'
+import PureTastingWaterSvg from '../../../lib/PureTastingWaterSvg'
 
 function NanoZeroFilterTech() {
     const { screenSize } = useScreenWidth()
@@ -15,7 +15,7 @@ function NanoZeroFilterTech() {
                         <div className='left'>
                             <div className='nano-zero-tech'>
                                 <h1>Nano Zero filter technology</h1>
-                                <span>A new age of filtration is here. Enjoy crisp drinking water at home.</span>
+                                <p>A new age of filtration is here. Enjoy crisp drinking water at home.</p>
                             </div>
                             <div className='filtration-for-all'>
                                 <FiltrationForAllSvg />

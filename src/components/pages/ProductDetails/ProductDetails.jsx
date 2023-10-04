@@ -12,20 +12,30 @@ import SelfCleaningSvg from '../../utils/SelfCleaningSvg';
 import ColdAndHotSvg from '../../utils/ColdAndHotSvg';
 import ImageZoom from "react-image-zooom";
 
-import Insulation from './ProductInsulation';
-import ProductSizes from './ProductSizes';
-import ProductColors from './ProductColors';
-import ProductDescription from './ProductDescription';
-import PolicyAccordions from './PolicyAccordions';
-import PurchaseButtons from './PurchaseButtons';
-import PrimaryInfo from './PrimaryInfo';
-import ProductImages from './ProductImages';
-import ProductImagesSwiper from './ProductImagesSwiper';
-import AsSeenIn from './AsSeenIn';
-import TraditionalVsLarq from './TraditionalVsLarq';
-import NanoZeroFilterTech from './NanoZeroFilterTech';
+import Insulation from './details/ProductInsulation';
+import ProductSizes from './details/ProductSizes';
+import ProductColors from './details/ProductColors';
+import ProductDescription from './details/ProductDescription';
+import PolicyAccordions from './details/PolicyAccordions';
+import PurchaseButtons from './details/PurchaseButtons';
+import PrimaryInfo from './details/PrimaryInfo';
+import ProductImages from './details/ProductImages';
+import ProductImagesSwiper from './details/ProductImagesSwiper';
+import AsSeenIn from './details/AsSeenIn';
+import TraditionalVsLarq from './details/TraditionalVsLarq';
+import NanoZeroFilterTech from './details/NanoZeroFilterTech';
+import LongLastingFilters from './details/LongLastingFilters';
+import PurevisTech from './details/PurevisTech';
+import NeutralizeContaminants from './details/NeutralizeContaminants';
+import LarqPurevis from './details/LarqPurevis';
+import ReviewsAndPromos from './details/ReviewsAndPromos';
+import Awards from './details/Awards';
+import QuotesSwiper from './details/QuotesSwiper';
+import Header from '../../layout/Header';
 
 function ProductDetails() {
+  // const [count, setCount] = useState(0)
+
   const { slug } = useParams()
   const { shopItem } = useSelector(store => store.shopItem)
   // const { cartData } = useSelector(store => store.cartData)
@@ -37,8 +47,13 @@ function ProductDetails() {
     dispatch(fetchProductDetails(slug))
   }, [])
 
+  // useEffect(() => {
+  //   setCount(count + 1)
+  // }, [slug])
+
   return (
     <div className='product-details' >
+      {/* <Header slug={slug} /> */}
       {
         shopItem.map(product => (
 
@@ -81,6 +96,19 @@ function ProductDetails() {
                 <div>
                   <TraditionalVsLarq />
                   <NanoZeroFilterTech />
+                  <LongLastingFilters />
+                  <PurevisTech />
+                  <NeutralizeContaminants />
+                </div>
+              }
+
+              {
+                product.slug.includes("bottle") &&
+                <div>
+                  <LarqPurevis />
+                  <ReviewsAndPromos />
+                  <QuotesSwiper />
+                  <Awards />
                 </div>
               }
 

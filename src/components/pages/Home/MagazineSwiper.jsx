@@ -37,10 +37,6 @@ function MagazineSwiper() {
                     slidesPerView: 2,
                     spaceBetween: 60
                 },
-                1000: {
-                    slidesPerView: 2.2,
-                    spaceBetween: 90,
-                },
                 1200: {
                     slidesPerView: 2.5,
                 },
@@ -48,8 +44,8 @@ function MagazineSwiper() {
                     slidesPerView: 3,
                 },
                 1450: {
-                    slidesPerView: 3.3,
-                    spaceBetween: 100
+                    slidesPerView: 3,
+                    spaceBetween: 40
                 }
             }}
         >

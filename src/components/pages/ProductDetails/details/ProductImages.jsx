@@ -1,7 +1,7 @@
 import React from 'react'
-import CleanWaterSvg from '../../utils/CleanWaterSvg'
-import SelfCleaningSvg from '../../utils/SelfCleaningSvg'
-import ColdAndHotSvg from '../../utils/ColdAndHotSvg'
+import CleanWaterSvg from '../../../utils/CleanWaterSvg'
+import SelfCleaningSvg from '../../../utils/SelfCleaningSvg'
+import ColdAndHotSvg from '../../../utils/ColdAndHotSvg'
 import ImageZoom from "react-image-zooom";
 
 function ProductImages({ product }) {

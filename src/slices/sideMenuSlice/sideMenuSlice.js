@@ -16,7 +16,6 @@ export const sideMenuSlice = createSlice({
         },
         toggleCart: (state) => {
             state.isCartOpen = !state.isCartOpen
-            
         }
     }
 })

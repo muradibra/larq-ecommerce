@@ -16,9 +16,12 @@ import SideMenu from './components/layout/SideMenu'
 import Cart from './components/lib/Cart'
 import ScrollToTop from './components/lib/ScrollToTop'
 import useScreenWidth from './hooks/useScreenWidth'
+import axios from 'axios'
+import { apiUrl } from './config'
+import { Toaster } from 'react-hot-toast'
+import Register from './components/pages/Register/Register'
 
 function App() {
-
   const dispatch = useDispatch()
 
   const [isAuth, setIsAuth] = useState(localStorage.isAuth)
@@ -30,6 +33,13 @@ function App() {
   return (
     <AppContext.Provider value={{ isAuth, setIsAuth }}>
       <div>
+        <Toaster
+          position='top-center'
+          containerClassName='hot-toast'
+          toastOptions={{
+            duration: "300",
+          }}
+        />
         <SideMenu />
         <Cart />
         <ScrollToTop />
@@ -50,8 +60,21 @@ function App() {
             :
             <Routes>
               <Route path='/' element={<Login />} />
+              <Route path='/register' element={<Register />} />
             </Routes>
         }
+
+        {/* <div>
+          <Header />
+
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/shop' element={<Shop />} />
+            <Route path='/product/:slug' element={<ProductDetails />} />
+          </Routes>
+          <Footer />
+        </div> */}
 
 
       </div>

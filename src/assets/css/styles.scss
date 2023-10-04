@@ -6,6 +6,8 @@
 @import "./_footer";
 @import "./_shop";
 @import "./_productDetails";
+@import "./_login";
+@import "./_register";
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -16,6 +18,10 @@ body {
   &.cart-open {
     overflow-y: hidden;
   }
+}
+
+.hot-toast {
+  margin-top: 70px;
 }
 
 a {

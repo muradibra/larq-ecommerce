@@ -27,9 +27,6 @@ function FilterHome() {
                     960: {
                         slidesPerView: 2
                     },
-                    // 1280: {
-                    //     slidesPerView: 3
-                    // }
                 }}
             >
                 {
@@ -47,7 +44,7 @@ function FilterHome() {
                                             {
                                                 product.discounted_price ?
                                                     <span>
-                                                        $<del>{product.price}</del> {product.discounted_price}
+                                                        $<del>{product.price}</del> ${product.discounted_price}
                                                     </span>
                                                     :
                                                     <span>${product.price}</span>

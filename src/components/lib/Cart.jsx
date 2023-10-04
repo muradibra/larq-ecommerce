@@ -26,7 +26,10 @@ function Cart() {
 
     const increaseQuantity = (item) => {
         const cartItem = cartData.find(cartItem => cartItem.id === item.id)
-        const newQuantity = cartItem.quantity + 1
+        let newQuantity = cartItem.quantity
+        if (newQuantity < 10) {
+            newQuantity += 1
+        }
 
         const updatedProduct = { ...cartItem, quantity: newQuantity }
         dispatch(updateCart(updatedProduct))
@@ -53,11 +56,11 @@ function Cart() {
     //         if (cartRef.current && !cartRef.current.contains(e.target)) {
     //             dispatch(toggleCart());
     //         }
-    //         // console.log("e.target", e.target)
-    //         // console.log(cartRef.current)
+    //         console.log("e.target", e.target)
+    //         console.log(cartRef.current)
     //     }
 
-    //     document.addEventListener("mousedown", handleClickOutside);
+    //         document.addEventListener("mousedown", handleClickOutside);
 
     //     return () => {
     //         document.removeEventListener("mousedown", handleClickOutside);
@@ -108,7 +111,8 @@ function Cart() {
                                                 </button>
                                                 <span>{item.quantity}</span>
                                                 <button
-                                                    className='increment'
+                                                    className={`increment ${item.quantity === 10 ? "increment-disabled" : ""}`}
+                                                    disabled={item.quantity === 10}
                                                     onClick={() => increaseQuantity(item)}
                                                 >
                                                     <FaPlus />

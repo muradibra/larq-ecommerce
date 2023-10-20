@@ -2,14 +2,14 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateStep } from '../../../../../slices/stepSlice/stepSlice'
 
-function StepInputs({ label, name, step }) {
+function StepInputs({ label, name, step, validationErrors }) {
     const dispatch = useDispatch()
     const stepData = useSelector(store => store.step[step])
     // console.log(stepData)
 
     return (
         <div className='input'>
-            <label htmlFor={name}>{label}</label>
+            <label className={``} htmlFor={name}>{label}</label>
             <input
                 type="text"
                 id={name}
@@ -20,6 +20,7 @@ function StepInputs({ label, name, step }) {
                     field: name,
                     value: e.target.value
                 }))}
+                className={``}
             // disabled={!selectedCountry}
             />
         </div>

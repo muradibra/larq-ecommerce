@@ -102,12 +102,27 @@ function CheckOut() {
                     <div className='customer step-no1'>
                         <div className='step-title'>
                             <h2 className='title'>Customer</h2>
+
                             {
                                 currentStep !== 1 ?
                                     <div className='email-and-edit'>
                                         <span>{email}</span>
                                         <button onClick={() => dispatch(goToSelectedStep(1))}>Edit</button>
                                     </div>
+                                    :
+                                    null
+                            }
+
+                            {
+                                currentStep !== 1 ?
+                                    <button className='selected-step-btn' onClick={() => dispatch(goToSelectedStep(1))}>Edit</button>
+                                    :
+                                    null
+                            }
+
+                            {
+                                currentStep !== 1 ?
+                                    <span className='email-span'>{email}</span>
                                     :
                                     null
                             }
@@ -176,7 +191,6 @@ function CheckOut() {
                     <div className="payment step-no4">
                         <div className="step-title">
                             <h2 className='title'>Payment</h2>
-
                         </div>
                         {/* {renderStep4()} */}
                         {

@@ -32,7 +32,10 @@ const initialState = {
         phone_number: "",
     },
     step4: {
-
+        credit_card: "",
+        expiration: "",
+        name_on_card: "",
+        cvv: ""
     },
 
 }

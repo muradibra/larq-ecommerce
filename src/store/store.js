@@ -5,6 +5,7 @@ import productsReducer from '../slices/productsSlice/productsSlice'
 import shopItemReducer from '../slices/shopItemSlice/shopItemSlice'
 import cartDataReducer from '../slices/cartDataSlice/cartDataSlice'
 import stepReducer from '../slices/stepSlice/stepSlice'
+import orderReducer from '../slices/orderSlice/orderSlice'
 
 export const store = configureStore({
     reducer: {
@@ -14,5 +15,6 @@ export const store = configureStore({
         shopItem: shopItemReducer,
         cartData: cartDataReducer,
         step: stepReducer,
+        order: orderReducer
     }
 })

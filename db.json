@@ -830,7 +830,19 @@
       ]
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 2,
+      "quantity": 1,
+      "product_img": "/src/assets/img/home-product1.webp",
+      "product_name": "LARQ Pitcher PureVis™",
+      "product_color": "Monaco Blue",
+      "product_price": "139.00",
+      "insulation": "",
+      "size": "",
+      "slug": "larq-pitcher-purevis-monaco-blue"
+    }
+  ],
   "faqs": [
     {
       "id": 1,

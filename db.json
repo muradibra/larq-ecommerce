@@ -49,12 +49,10 @@
       "review_count": "6160 reviews",
       "insulation": [
         {
-          "icon": "https://static.vecteezy.com/system/resources/thumbnails/000/353/173/small/Health__2821_29.jpg",
           "label": "Insulated",
           "description": "24 hours cold and 12 hot"
         },
         {
-          "icon": "https://img.myloview.com/stickers/steel-thermos-icon-outline-steel-thermos-vector-icon-for-web-design-isolated-on-white-background-400-177311507.jpg",
           "label": "Non-Insulated",
           "description": "Light as air"
         }
@@ -162,6 +160,24 @@
       "payment_by_credit": "Or 4 interest-free installments if $34.75",
       "stars": 4.3,
       "review_count": "6160 reviews",
+      "sizes": [
+        {
+          "size": "40 oz"
+        },
+        {
+          "size": "50 oz"
+        }
+      ],
+      "insulation": [
+        {
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
+      ],
       "images": [
         "/src/assets/img/home-product1.webp",
         "/src/assets/img/home-product2.webp"
@@ -233,6 +249,16 @@
       "payment_by_credit": "Or 4 interest-free installments of $9.99",
       "stars": 4.3,
       "review_count": "6160 reviews",
+      "insulation": [
+        {
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
+      ],
       "sizes": [
         {
           "size": "23 oz"
@@ -417,6 +443,7 @@
       },
       "color": "Obsidian Black",
       "price": "39.00",
+      "payment_by_credit": "Or 4 interest-free installments if $9.75",
       "sizes": [
         {
           "size": "17 oz"
@@ -429,6 +456,16 @@
         "/src/assets/img/drinkware-product2.webp",
         "/src/assets/img/drinkware-product2.webp",
         "/src/assets/img/drinkware-product2.webp"
+      ],
+      "insulation": [
+        {
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
       ],
       "colors": [
         {
@@ -501,18 +538,31 @@
       "main_img_url": "https://res.cloudinary.com/larq/image/upload/q_auto,f_auto/w_900/v1685379792/SKU/SPA/v3/BNDMB050A.png",
       "title": "LARQ Bottle Twist Top",
       "shop": "drinkware",
+      "stars": 4.3,
+      "review_count": "6160 reviews",
       "description": {
         "long": "The LARQ Bottle Twist Top features double-wall vacuum insulation to keep water cold for up to 24 hours and hot for 12 hours. Powder-coated in two-toned colors, the LARQ Bottle Twist Top is perfect for the office, a weekend snow trip, and staying hydrated wherever your adventures take you.",
         "short": "Note: The LARQ Bottle does not feature our built-in PureVis™ technology. Learn more about our LARQ Bottle with PureVis™ technology for on-the-go water purification here."
       },
       "color": "Monaco Blue",
       "price": "29.00",
+      "payment_by_credit": "Or 4 interest-free installments if $7.25",
       "sizes": [
         {
           "size": "17 oz"
         },
         {
           "size": "25 oz"
+        }
+      ],
+      "insulation": [
+        {
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "label": "Non-Insulated",
+          "description": "Light as air"
         }
       ],
       "images": [
@@ -702,6 +752,24 @@
       "payment_by_credit": "Or 4 interest-free installments if $34.75",
       "stars": 4.3,
       "review_count": "6160 reviews",
+      "sizes": [
+        {
+          "size": "40 oz"
+        },
+        {
+          "size": "50 oz"
+        }
+      ],
+      "insulation": [
+        {
+          "label": "Insulated",
+          "description": "24 hours cold and 12 hot"
+        },
+        {
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
+      ],
       "images": [
         "/src/assets/img/product-img1.webp",
         "/src/assets/img/product-img2.webp",
@@ -766,8 +834,11 @@
   "faqs": [
     {
       "id": 1,
-      "product": "LARQ Bottle PureVis",
-      "product_faqs": [
+      "product": "LARQ Bottle PureVis™",
+      "slug": "larq-bottle-purevis-monaco-blue",
+      "product_slug": "larq-bottle-purevis",
+      "icon": "/src/assets/img/faq-bottle-icon.png",
+      "faqs": [
         {
           "id": 1,
           "question": "What's in the box?",
@@ -797,8 +868,11 @@
     },
     {
       "id": 2,
-      "product": "LARQ Pitcher PureVis",
-      "product_faqs": [
+      "product": "LARQ Bottle Filtered",
+      "slug": "larq-bottle-filtered-obsidian-black",
+      "product_slug": "larq-bottle-filtered",
+      "icon": "/src/assets/img/faq-bottle-filtered-icon.png",
+      "faqs": [
         {
           "id": 1,
           "question": "What's in the box?",
@@ -828,8 +902,11 @@
     },
     {
       "id": 3,
-      "product": "LARQ Bottle Swig Top",
-      "product_faqs": [
+      "product": "LARQ Pitcher PureVis™",
+      "slug": "larq-pitcher-purevis-monaco-blue",
+      "product_slug": "larq-pitcher-purevis",
+      "icon": "/src/assets/img/faq-pitcher-icon.png",
+      "faqs": [
         {
           "id": 1,
           "question": "What's in the box?",
@@ -859,8 +936,10 @@
     },
     {
       "id": 4,
-      "product": "LARQ Bottle Filtered",
-      "product_faqs": [
+      "product": "Drinkware",
+      "slug": "drinkware",
+      "icon": "/src/assets/img/faq-drinkware-icon.png",
+      "faqs": [
         {
           "id": 1,
           "question": "What's in the box?",
@@ -890,8 +969,10 @@
     },
     {
       "id": 5,
-      "product": "LARQ Bottle Flip Top",
-      "product_faqs": [
+      "product": "Accessories",
+      "slug": "accessories",
+      "icon": "/src/assets/img/faq-accessories-icon.png",
+      "faqs": [
         {
           "id": 1,
           "question": "What's in the box?",
@@ -921,8 +1002,10 @@
     },
     {
       "id": 6,
-      "product": "LARQ Bottle Twist Top",
-      "product_faqs": [
+      "product": "Personalization",
+      "slug": "personalization",
+      "icon": "/src/assets/img/faq-personalization-icon.png",
+      "faqs": [
         {
           "id": 1,
           "question": "What's in the box?",
@@ -952,8 +1035,76 @@
     },
     {
       "id": 7,
-      "product": "LARQ Bottle Movement PureVis",
-      "product_faqs": [
+      "product": "Subscription",
+      "slug": "subscription",
+      "icon": "/src/assets/img/faq-subscription-icon.png",
+      "faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "product": "Shipping & Returns",
+      "slug": "shipping-returns",
+      "icon": "/src/assets/img/faq-shipping-icon.png",
+      "faqs": [
+        {
+          "id": 1,
+          "question": "What's in the box?",
+          "answer": "LARQ Bottle PureVis™, USB to MicroUSB connector, Quick Start Guide"
+        },
+        {
+          "id": 2,
+          "question": "How does the LARQ Bottle PureVis work?",
+          "answer": "The LARQ Bottle PureVis uses PureVis™ technology to clean your water and bottle at the touch of a button. The bottle intelligently turns on every 2 hours to clean the water you put inside as well as the inside of the bottle."
+        },
+        {
+          "id": 3,
+          "question": "Will the insulated LARQ Bottle PureVis keep the water cold?",
+          "answer": "Yes, the insulated bottle will keep cold water chilled for up to 24 hours."
+        },
+        {
+          "id": 4,
+          "question": "Does the LARQ Bottle PureVis have a warranty?",
+          "answer": "LARQ offers a 1-year limited warranty on all bottles purchased from www.livelarq.com and authorized retailers. The warranty covers the repair or replacement of any defective material or component. In the rare case that we are unable to repair or replace the defective material or component, we will submit a refund. It does not cover any issues due to normal wear and tear, misuse or loss/theft of the bottle."
+        },
+        {
+          "id": 5,
+          "question": "Where can i find the manual?",
+          "answer": "You will find manual in your box or you can download it here!"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "product": "Warranty",
+      "slug": "warranty",
+      "icon": "/src/assets/img/faq-warranty-icon.png",
+      "faqs": [
         {
           "id": 1,
           "question": "What's in the box?",
@@ -981,5 +1132,6 @@
         }
       ]
     }
-  ]
+  ],
+  "orders": []
 }

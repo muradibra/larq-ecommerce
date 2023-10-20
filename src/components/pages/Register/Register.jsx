@@ -89,9 +89,8 @@ function Register() {
         setValidationErrors(errors)
 
         if (Object.values(errors).filter(string => string).length) {
-            console.log(Object.values(errors).filter(string => string));
-            // alert("ERRORRRR")
-            console.log(data);
+            // console.log(Object.values(errors).filter(string => string));
+            // console.log(data);
             return
         }
         const obj = {

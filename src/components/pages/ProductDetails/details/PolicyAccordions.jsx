@@ -11,7 +11,7 @@ import {
 function PolicyAccordions() {
     return (
         <div className='policy-accordions'>
-            <Accordion defaultIndex={[0]} allowMultiple>
+            <Accordion allowMultiple>
                 <AccordionItem >
                     <h2>
                         <AccordionButton>

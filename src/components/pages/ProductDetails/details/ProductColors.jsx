@@ -2,15 +2,16 @@ import { nanoid } from '@reduxjs/toolkit'
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
-function ProductColors({ product }) {
-    const { shopItem } = useSelector(store => store.shopItem)
-    const [colorName, setColorName] = useState()
+function ProductColors({ product, colorName, setColorName }) {
+    // const { shopItem } = useSelector(store => store.shopItem)
 
-    useEffect(() => {
-        if (shopItem.length) {
-            setColorName(shopItem[0].color)
-        }
-    }, [shopItem])
+    // const [colorName, setColorName] = useState()
+
+    // useEffect(() => {
+    //     if (shopItem.length) {
+    //         setColorName(shopItem[0].color)
+    //     }
+    // }, [shopItem])
 
     return (
         <div className='colors'>
@@ -25,7 +26,6 @@ function ProductColors({ product }) {
                         <input
                             key={nanoid()}
                             type="radio"
-                            // name="murad"
                             defaultChecked={colorName === item.color_name}
                             style={{ backgroundColor: item.hex_code }}
                             onClick={() => setColorName(item.color_name)}

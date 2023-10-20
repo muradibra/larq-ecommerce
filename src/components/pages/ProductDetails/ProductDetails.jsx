@@ -2,16 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProductDetails } from '../../../slices/shopItemSlice/shopItemSlice';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-import { PiWarningCircleFill } from 'react-icons/pi'
-import { addToCart, updateCart } from '../../../slices/cartDataSlice/cartDataSlice';
 import useScreenWidth from '../../../hooks/useScreenWidth';
-import CleanWaterSvg from '../../utils/CleanWaterSvg';
-import SelfCleaningSvg from '../../utils/SelfCleaningSvg';
-import ColdAndHotSvg from '../../utils/ColdAndHotSvg';
 import ImageZoom from "react-image-zooom";
-
 import Insulation from './details/ProductInsulation';
 import ProductSizes from './details/ProductSizes';
 import ProductColors from './details/ProductColors';
@@ -31,29 +23,31 @@ import LarqPurevis from './details/LarqPurevis';
 import ReviewsAndPromos from './details/ReviewsAndPromos';
 import Awards from './details/Awards';
 import QuotesSwiper from './details/QuotesSwiper';
-import Header from '../../layout/Header';
 
 function ProductDetails() {
-  // const [count, setCount] = useState(0)
 
   const { slug } = useParams()
   const { shopItem } = useSelector(store => store.shopItem)
-  // const { cartData } = useSelector(store => store.cartData)
   const dispatch = useDispatch()
   const { screenSize } = useScreenWidth()
-
+  const [insulation, setInsulation] = useState('')
+  const [productSize, setProductSize] = useState('')
+  const [colorName, setColorName] = useState('')
 
   useEffect(() => {
     dispatch(fetchProductDetails(slug))
   }, [])
 
-  // useEffect(() => {
-  //   setCount(count + 1)
-  // }, [slug])
+  useEffect(() => {
+    if (shopItem.length) {
+      setColorName(shopItem[0].color)
+    }
+  }, [shopItem])
+
+
 
   return (
     <div className='product-details' >
-      {/* <Header slug={slug} /> */}
       {
         shopItem.map(product => (
 
@@ -71,13 +65,30 @@ function ProductDetails() {
               <div className='product-info'>
                 <PrimaryInfo product={product} />
 
-                <Insulation product={product} />
+                <Insulation
+                  product={product}
+                  insulation={insulation}
+                  setInsulation={setInsulation}
+                />
 
-                <ProductSizes product={product} />
+                <ProductSizes
+                  product={product}
+                  productSize={productSize}
+                  setProductSize={setProductSize}
+                />
 
-                <ProductColors product={product} />
+                <ProductColors
+                  product={product}
+                  colorName={colorName}
+                  setColorName={setColorName}
+                />
 
-                <PurchaseButtons product={product} />
+                <PurchaseButtons
+                  product={product}
+                  insulation={insulation}
+                  productSize={productSize}
+                  colorName={colorName}
+                />
 
                 <ProductDescription product={product} />
 

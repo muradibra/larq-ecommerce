@@ -28,7 +28,12 @@ function SideMenu() {
     setIsAuth(false)
     toast.loading("You are logged out!")
     dispatch(toggleSideMenu())
-    navigate('/')
+    navigate('/login')
+  }
+  const logIn = () => {
+    // toast.success("You are logged in!")
+    dispatch(toggleSideMenu())
+    navigate("/login")
   }
 
   return (
@@ -89,21 +94,35 @@ function SideMenu() {
 
           <ul>
             <li>
-              <Link to='/accessories'>Filters & Accessories</Link>
+              <Link onClick={() => dispatch(toggleSideMenu())} to='/accessories'>Filters & Accessories</Link>
             </li>
             <li>
-              <Link to='/shop?shop=gift-sets'>Gift sets</Link>
+              <Link onClick={() => dispatch(toggleSideMenu())} to='/shop?shop=gift-sets'>Gift sets</Link>
             </li>
             <li>
-              <Link to='/corporate-gifting'>Corporate gifting</Link>
+              <Link onClick={() => dispatch(toggleSideMenu())} to='/corporate-gifting'>Corporate gifting</Link>
             </li>
             <li>
-              <Link to='/support'>FAQ</Link>
+              <Link onClick={() => dispatch(toggleSideMenu())} to='/support'>FAQ</Link>
             </li>
             <li>
-              <button onClick={() => logOut()}
+              <button
+
               >
-                Log out
+                {
+                  localStorage.isAuth ?
+                    <span
+                      onClick={() => logOut()}
+                    >
+                      Log out
+                    </span>
+                    :
+                    <span
+                      onClick={() => logIn()}
+                    >
+                      Log in
+                    </span>
+                }
               </button>
             </li>
           </ul>

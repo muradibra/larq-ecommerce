@@ -36,8 +36,6 @@ function Login() {
         }
         if (!password) {
             errors.password = errorMessages.required("Password")
-        } else if (!checkIsValidPassword(password)) {
-            errors.password = errorMessages.invalidPassword("Password")
         }
 
         return errors
@@ -50,11 +48,11 @@ function Login() {
 
         if (Object.values(errors).filter(string => string).length > 0) {
             // toast.error("Fill all inputs!", toast_config)
+            console.log(errors)
             return
         }
 
         if (!user) {
-            // alert("Username or password is not correct!")
             toast.error("Username or password is not correct!")
             return
         }
@@ -62,6 +60,7 @@ function Login() {
         setIsAuth(true)
         localStorage.setItem('isAuth', true)
         navigate("/home")
+        toast.success("You are logged in!")
     }
 
     return (

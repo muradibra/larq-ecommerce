@@ -1,0 +1,91 @@
+.support {
+  padding: 0 5%;
+  width: 100%;
+  margin: 80px auto 60px;
+
+  .title-wrapper {
+    text-align: center;
+    color: #153a5b;
+
+    h1 {
+      margin: 90px 0 20px;
+      font-size: 24px;
+    }
+  }
+
+  .menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .menu {
+      width: 45%;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      padding: 1.66667rem 0.33333rem;
+
+      span {
+        font-size: 0.8rem;
+        line-height: 1.67;
+        color: #153a5b;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .icon-wrapper {
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 1.33333rem;
+    font-size: 3.2rem;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 638px) {
+  .support {
+    .menus {
+      .menu {
+        width: 30%;
+
+        .svg-wrapper {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .support {
+    margin-top: 200px;
+    margin-bottom: 250px;
+
+    .title-wrapper {
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .menus {
+      margin-top: 80px;
+      row-gap: 20px;
+
+      .menu {
+        padding: 2.66667rem 0.66667rem;
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

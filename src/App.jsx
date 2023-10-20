@@ -20,15 +20,24 @@ import axios from 'axios'
 import { apiUrl } from './config'
 import { Toaster } from 'react-hot-toast'
 import Register from './components/pages/Register/Register'
+import ContactUs from './components/pages/ContactUs/ContactUs'
+import Press from './components/pages/Press/Press'
+import OurStory from './components/pages/OurStory/OurStory'
+import Support from './components/pages/Support/Support'
+import ProductFaqs from './components/pages/Support/components/ProductFaqs'
+import CheckOut from './components/pages/CheckOut/CheckOut'
+import CheckOutHeader from './components/pages/CheckOut/CheckOutHeader'
 
 function App() {
   const dispatch = useDispatch()
-
   const [isAuth, setIsAuth] = useState(localStorage.isAuth)
+  const location = useLocation()
 
   useEffect(() => {
     dispatch(getCart())
   }, [])
+
+  const isCheckoutPage = location.pathname === '/checkout';
 
   return (
     <AppContext.Provider value={{ isAuth, setIsAuth }}>
@@ -44,25 +53,34 @@ function App() {
         <Cart />
         <ScrollToTop />
 
-        {
-          isAuth ?
-            <div>
-              <Header />
+        {/* { */}
+        {/* isAuth ? */}
+        <div>
+          {/* <Header /> */}
+          {isCheckoutPage ? <CheckOutHeader /> : <Header />}
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/shop' element={<Shop />} />
+            <Route path='/product/:slug' element={<ProductDetails />} />
+            <Route path='/contact-us' element={<ContactUs />} />
+            <Route path='/press' element={<Press />} />
+            <Route path='/our-story' element={<OurStory />} />
+            <Route path='/support' element={<Support />} />
+            <Route path='/support/:slug' element={<ProductFaqs />} />
+            <Route path='/checkout' element={<CheckOut />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+          {isCheckoutPage ? null : <Footer />}
 
-              <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/home' element={<Home />} />
-                <Route path='/shop' element={<Shop />} />
-                <Route path='/product/:slug' element={<ProductDetails />} />
-              </Routes>
-              <Footer />
-            </div>
-            :
-            <Routes>
-              <Route path='/' element={<Login />} />
-              <Route path='/register' element={<Register />} />
-            </Routes>
-        }
+          {/* <Footer /> */}
+        </div>
+        {/* // : */}
+        {/* <Routes> */}
+        {/* </Routes> */}
+
+        {/* } */}
 
         {/* <div>
           <Header />

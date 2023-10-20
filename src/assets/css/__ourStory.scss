@@ -1,0 +1,357 @@
+.our-story {
+  margin-top: 100px;
+
+  .founders {
+    padding: 0 5%;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-position: center bottom;
+    background-position: center bottom;
+    background-image: url(../img/founders.webp);
+    position: relative;
+
+    .heroContainer {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      height: 540px;
+      min-height: 0;
+      max-height: none;
+      text-align: center;
+
+      .heroContent {
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        color: #5a5e60;
+
+        h1 {
+          margin: 0 auto;
+          max-width: 390px;
+          font-family: Value Bold;
+          font-size: 32px;
+          line-height: 1.2;
+          color: #153a5b;
+        }
+
+        p {
+          margin: 1rem 0rem 0rem;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .inspiring-change {
+    .title-wrapper {
+      color: #153a5b;
+      margin: 0 auto;
+      padding: 2rem 5% 6rem;
+
+      .title {
+        margin: 2.23333rem 0 1.75rem 0;
+        font-size: 32px;
+        word-wrap: break-word;
+        text-align: center;
+        letter-spacing: 0.25px;
+
+        &::after {
+          left: 50%;
+          width: 50px;
+          content: "";
+          display: block;
+          position: absolute;
+          margin-top: 30px;
+          margin-left: -25px;
+          border-bottom: 6px solid;
+          border-bottom-color: #f3756d;
+        }
+      }
+    }
+
+    .inspiring-change-content {
+      padding: 0 5%;
+      .drink-brilliantly,
+      .drink-with-purpose {
+        .img-wrapper {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .text {
+          text-align: center;
+          h2 {
+            color: #153a5b;
+            font-size: 18px;
+            margin: 0.7rem 0;
+          }
+          p {
+            color: #5a5e60;
+            margin-bottom: 2.25rem;
+          }
+        }
+      }
+    }
+  }
+
+  .hashtag-drink-brilliantly {
+    text-align: center;
+    color: #153a5b;
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 5% 6rem;
+
+    h2 {
+      margin: 2.23333rem 0 1.75rem 0;
+      font-size: 32px;
+      word-wrap: break-word;
+      text-align: center;
+      letter-spacing: 0.25px;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      bottom: 0;
+      content: "";
+      z-index: -1;
+      position: absolute;
+      background: #f5f9fc;
+      border-radius: 120px 0 0 0;
+    }
+
+    &::after {
+      left: 50%;
+      width: 50px;
+      content: "";
+      display: block;
+      position: absolute;
+      margin-left: -25px;
+      border-bottom: 6px solid;
+      border-bottom-color: #f3756d;
+    }
+  }
+
+  .for-insta {
+    background-color: #f5f9fc;
+    padding: 0 5%;
+    padding-bottom: 3.2rem;
+
+    .insta-feed-head {
+      margin-bottom: 20px;
+      p {
+        color: #5a5e60;
+        text-align: center;
+      }
+    }
+
+    .photos-wrapper {
+      display: flex;
+      column-gap: 10px;
+
+      .visible-later {
+        display: none;
+      }
+
+      .image {
+        width: 100%;
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+
+        .img-overlay {
+          display: none;
+
+          .overlay-icon {
+            margin-bottom: 30px;
+          }
+
+          a {
+            color: #fff;
+            border: 1px solid #fff;
+            display: inline-block;
+            padding: 3px;
+            transition: .5s;
+
+            &:hover {
+              background-color: #fff;
+              color: #5a5e60;
+            }
+          }
+        }
+
+        img {
+          cursor: pointer;
+          width: 100%;
+          transition: 0.5s;
+
+          &:hover {
+            transform: scale(1.01);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 560px) {
+  .our-story {
+    .founders {
+      background-image: url(../img/founders2.webp);
+      -webkit-background-position: center center;
+      background-position: center center;
+    }
+  }
+}
+
+@media (min-width: 724px) {
+  .drink-brilliantly {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5.125rem;
+
+    .img-wrapper {
+      width: 45% !important ;
+      margin: 0 1.5rem;
+      flex-grow: 0;
+      max-width: 50%;
+      flex-basis: 50%;
+
+      margin: 0 1.5rem;
+
+      img {
+        // margin: 0 auto;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .text {
+      width: 45% !important;
+      text-align: left !important;
+    }
+  }
+
+  .drink-with-purpose {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-bottom: 5.125rem;
+
+    .img-wrapper {
+      width: 45% !important ;
+      margin: 0 1.5rem;
+
+      flex-grow: 0;
+      max-width: 50%;
+      flex-basis: 50%;
+
+      margin: 0 1.5rem;
+
+      img {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .text {
+      width: 45% !important;
+      text-align: left !important;
+    }
+  }
+
+  .hashtag-drink-brilliantly {
+    h2 {
+      font-size: 40px !important;
+    }
+  }
+
+  .for-insta {
+    padding: 0 3% !important;
+    padding-bottom: 4.53333rem !important;
+    .photos-wrapper {
+      .image {
+        &.visible-later {
+          display: inline-block;
+        }
+        &:hover .img-overlay {
+          display: inline-block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+          top: 0;
+          left: 0;
+          z-index: 3;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 801px) {
+  .our-story {
+    .founders {
+      margin-top: -50px;
+      background-image: url(../img/founders3.webp);
+      -webkit-background-position: center top;
+      background-position: center top;
+
+      .heroContainer {
+        .heroContent {
+          .heroContent_title {
+            font-size: 40px;
+            max-width: none;
+          }
+          .heroContent_text {
+            margin: 1.33333rem 0rem 0rem;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .our-story {
+    .founders {
+      background-image: url(../img/founders4.webp);
+      padding-bottom: 75px;
+
+      .heroContainer {
+        .heroContent {
+          .heroContent_text {
+            width: 50%;
+            margin: 1.33333rem auto 0;
+          }
+        }
+      }
+    }
+
+    .for-insta {
+      .photos-wrapper {
+        padding: 0 5% !important;
+      }
+    }
+  }
+}

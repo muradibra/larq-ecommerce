@@ -21,7 +21,7 @@ function MagazineSwiper() {
         <Swiper
             modules={[Scrollbar, Navigation]}
             scrollbar={{ draggable: true }}
-            spaceBetween={100}
+            spaceBetween={40}
             slidesPerView={1.1}
             navigation={{  // Use Swiper's built-in navigation
                 prevEl: '.swiper-btn-prev',

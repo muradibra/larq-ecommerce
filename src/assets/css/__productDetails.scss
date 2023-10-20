@@ -5,6 +5,7 @@
 
 .color-inputs {
   input[type="radio"] {
+    cursor: pointer;
     appearance: none;
     width: 31px;
     height: 31px;
@@ -52,7 +53,7 @@
 .product-details {
   .product-details-inner {
     .primary-info-section {
-      padding: 6rem 5% 6.66667rem 5%;
+      padding: 5rem 5% 6.66667rem 5%;
     }
 
     .product-images {
@@ -168,6 +169,7 @@
 
       .primary-info {
         .product-title {
+          margin-top: 15px;
           h1 {
             font-size: 1.6rem;
           }
@@ -208,6 +210,7 @@
 
       .insulation {
         margin-top: 1.86667rem;
+
         .insulation-title {
           display: flex;
           justify-content: space-between;
@@ -228,51 +231,42 @@
         .insulation-types {
           display: flex;
           justify-content: space-between;
-          gap: 10px;
+          gap: 15px;
 
-          div {
-            // display: flex;
-            // gap: 15px;
-            position: relative;
-            width: 100%;
+          button {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            background-color: transparent;
+            outline: none;
+            border: 1px solid #d8dee4;
+            transition: 0.4s;
+            cursor: pointer;
+            color: #153a5b;
+            font-size: 13px;
 
-            .insulation-label {
-              display: flex;
-              justify-content: space-between;
-              width: 95%;
-              position: absolute;
-              top: 45%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-
-              .img-wrapper {
-                width: 50%;
-                background-color: #fff;
-
-                img {
-                  vertical-align: middle;
-                  width: 100%;
-                  height: 90%;
-                }
-              }
-
-              .type {
-                p {
-                  font-size: 13px;
-                }
-                span {
-                  font-size: 10px;
-                }
-              }
+            &.active {
+              border: 1px solid #153a5b;
             }
-            input[type="radio"] {
-              appearance: none;
-              width: 100%;
-              height: 70px;
-              border: 1px solid #5a5e60;
 
-              &:checked {
-                border: 2px solid #153a5b;
+            &:hover {
+              border-color: #153a5b;
+            }
+
+            p {
+              text-align: left;
+              font-weight: 600;
+            }
+
+            .text {
+              text-align: left;
+            }
+
+            .svg-wrapper {
+              width: 5%;
+
+              svg {
+                width: 100%;
               }
             }
           }
@@ -290,27 +284,20 @@
           justify-content: space-between;
           column-gap: 10px;
 
-          div {
+          button {
+            padding: 12px;
+            border: 1px solid #d8dee4;
+            background-color: #fff;
             width: 100%;
-            position: relative;
+            cursor: pointer;
+            transition: 0.4s;
 
-            label {
-              position: absolute;
-              top: 45%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              font-weight: 600;
+            &:hover {
+              border: 1px solid var(--primary-blue);
             }
 
-            input[type="radio"] {
-              appearance: none;
-              width: 100%;
-              height: 40px;
-              border: 1px solid #5a5e60;
-
-              &:checked {
-                border: 2px solid #153a5b;
-              }
+            &.active {
+              border: 1px solid var(--primary-blue);
             }
           }
         }
@@ -1177,7 +1164,7 @@
             width: 100%;
 
             img {
-              border-radius: 0 8px 8px 0;
+              border-radius: 8px 8px 0 0;
               width: 100%;
               height: 100%;
             }
@@ -1185,7 +1172,7 @@
 
           .card-promo-content {
             background-color: #eef4f9;
-            border-radius: 8px 0 0 8px !important;
+            border-radius: 0 0 8px 8px !important;
 
             padding: 2rem;
 
@@ -1327,6 +1314,20 @@
     .product-images {
       width: 55%;
     }
+
+    .insulation {
+      .insulation-types {
+        .btn {
+          p {
+            font-size: 12px !important;
+          }
+          span {
+            font-size: 11px;
+          }
+
+        }
+      }
+    }
   }
 
   .additional-info {
@@ -1357,6 +1358,8 @@
         }
       }
     }
+
+    
 
     .reviews-and-promos {
       // grid-column-gap: 3.33333rem !important;
@@ -1410,7 +1413,7 @@
           position: absolute;
           bottom: 0;
           right: 0;
-          max-width: 25.33333rem !important;
+          max-width: 18rem !important;
         }
       }
     }

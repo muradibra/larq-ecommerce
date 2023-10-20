@@ -49,7 +49,7 @@ function Footer() {
                     <div className='col-1'>
                         <ul>
                             <li>
-                                <Link>
+                                <Link to="/support">
                                     FAQ
                                 </Link>
                             </li>
@@ -59,7 +59,7 @@ function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link>
+                                <Link to='/contact-us'>
                                     Contact
                                 </Link>
                             </li>
@@ -79,17 +79,17 @@ function Footer() {
                     <div className='col-2'>
                         <ul>
                             <li>
-                                <Link>
+                                <Link to="https://basq.livelarq.com/">
                                     basq magazine
                                 </Link>
                             </li>
                             <li>
-                                <Link>
+                                <Link to="/press">
                                     Press
                                 </Link>
                             </li>
                             <li>
-                                <Link>
+                                <Link to='/our-story'>
                                     Our story
                                 </Link>
                             </li>
@@ -99,7 +99,7 @@ function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link>
+                                <Link to="https://larq1.grin.live/larq">
                                     Ambassador program
                                 </Link>
                             </li>

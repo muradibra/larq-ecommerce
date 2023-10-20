@@ -22,7 +22,7 @@ export const addToCart = createAsyncThunk("cart/post", async (obj) => {
         const resp = await axios.post(`${apiUrl}/cart`, obj)
         return resp.data
     } catch (err) {
-        return err
+        return err.response.data
     }
 })
 
@@ -71,10 +71,12 @@ export const cartDataSlice = createSlice({
             state.success = true
 
             state.cartData = [...state.cartData, action.payload];
+            console.log("fulfill", action.payload)
         })
         builder.addCase(addToCart.rejected, (state, action) => {
             state.isLoading = false
             state.success = false
+            console.log("reject", action.payload)
         })
 
         builder.addCase(updateCart.pending, (state, action) => {

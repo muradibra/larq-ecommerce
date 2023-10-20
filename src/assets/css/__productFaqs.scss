@@ -1,0 +1,226 @@
+.minus-icon,
+.plus-icon {
+  color: #f3756d;
+  font-size: 14px;
+}
+.product-faqs {
+  margin-top: 100px;
+
+  .faq-accordions {
+    .back-btn {
+      padding: 0 5%;
+
+      button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #f3756d;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: .5s;
+
+        &:hover {
+          gap: 8px;
+        }
+
+        svg {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .details {
+      margin: 20px 0 50px;
+      padding: 0 5%;
+
+      h1 {
+        color: #153a5b;
+        font-size: 1.6rem;
+        line-height: 1.3;
+      }
+
+      .links {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+
+        a {
+          color: #153a5b;
+          border-bottom: 1px solid #153a5b52;
+          transition: 0.4s;
+          font-size: 13px;
+          // text-decoration: underline;
+
+          &:hover {
+            // text-decoration: none;
+            // border-bottom: none;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+
+    .faqs {
+      margin: 0;
+      min-width: 0;
+      margin: 0 auto;
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+
+      .title {
+        h2 {
+          color: #153a5b;
+          font-size: 1.2rem;
+          line-height: 1.33;
+          margin-bottom: 10px;
+        }
+      }
+
+      .chakra-accordion {
+        border-bottom: 0.06667rem solid #e5e5e5;
+        padding-bottom: 5px;
+
+        &:focus {
+          border-bottom: 0.06667rem solid rgb(153, 153, 153);
+        }
+      }
+
+      .chakra-accordion__item {
+        h2 {
+          button {
+            padding: 15px 0;
+            background-color: transparent;
+            border: none;
+            flex-direction: row-reverse;
+            gap: 30px;
+            cursor: pointer;
+            // border-bottom: 0.06667rem solid #e5e5e5;
+            // margin-bottom: 10px;
+
+            span {
+              font-size: 0.86667rem;
+              color: rgb(21, 58, 91);
+            }
+
+            // &:focus {
+            //     border-bottom: none;
+            // }
+          }
+        }
+
+        .chakra-accordion__panel {
+          font-size: 13px;
+          color: #5a5e60;
+        }
+      }
+    }
+  }
+
+  .reach-out {
+    margin-top: 80px;
+    background-color: #eef4f9;
+    padding: 2.66667rem;
+    color: #153a5b;
+
+    .question-icon {
+      color: #f3756d;
+      font-size: 1.6rem;
+    }
+
+    .title {
+      margin-top: 32px;
+      font-size: 1.1rem;
+    }
+
+    .mail {
+      margin-top: 10px;
+      font-size: 0.86667rem;
+
+      p {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .address {
+      margin-top: 40px;
+      font-size: 0.73333rem;
+      line-height: 1.64;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .product-faqs {
+    .back-btn {
+      margin-top: 130px !important;
+    }
+
+    .details {
+      margin-bottom: 80px !important;
+
+      h1 {
+        font-size: 40px !important;
+      }
+
+      .links {
+        a {
+          font-size: 15px !important;
+        }
+      }
+    }
+
+    .faq-accordions {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 64rem;
+    }
+
+    .chakra-accordion__item {
+      h2 {
+        button {
+          span {
+            font-size: 1.33333rem !important;
+          }
+        }
+      }
+
+      .chakra-accordion__panel {
+        font-size: 1.33333rem !important;
+      }
+    }
+
+    .reach-out {
+      // margin-top: 130px;
+      // margin-bottom: 90px;
+      padding: 6.66667rem;
+      width: 100%;
+      margin: 130px auto 90px;
+      max-width: 77.33333rem;
+
+      .question-icon {
+        font-size: 3.2rem;
+      }
+
+      .title {
+        font-size: 2.1rem;
+        line-height: 1.4;
+      }
+
+      .mail {
+        font-size: 1.33333rem;
+        line-height: 1.6;
+      }
+
+      .address {
+        font-size: 0.86667rem;
+        line-height: 1.3;
+      }
+    }
+  }
+}

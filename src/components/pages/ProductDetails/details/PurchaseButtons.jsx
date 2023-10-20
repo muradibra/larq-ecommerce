@@ -3,12 +3,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addToCart, updateCart } from '../../../../slices/cartDataSlice/cartDataSlice'
 import toast from 'react-hot-toast'
 
-function PurchaseButtons({ product }) {
+function PurchaseButtons({ product, insulation, productSize, colorName }) {
     const dispatch = useDispatch()
     const { cartData } = useSelector(store => store.cartData)
 
     const addProductToCart = (product) => {
-        const existProduct = cartData.find(item => item.id === product.id)
+        debugger
+        const existProduct = cartData.find(item => item.id === product.id
+            // && item.product_color === colorName
+        )
 
         if (existProduct) {
             // console.log("existProduct", existProduct)
@@ -27,8 +30,10 @@ function PurchaseButtons({ product }) {
                 quantity: 1,
                 product_img: product.main_img_url,
                 product_name: product.title,
-                product_color: product.color,
+                product_color: colorName,
                 product_price: product.discounted_price ? product.discounted_price : product.price,
+                insulation: insulation,
+                size: productSize,
                 slug: product.slug,
             }
         ))

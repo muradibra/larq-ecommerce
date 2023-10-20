@@ -63,8 +63,13 @@ const Header = () => {
     const logOut = () => {
         localStorage.removeItem("isAuth")
         setIsAuth(false)
-        navigate('/')
+        navigate('/login')
         toast.loading("You are logged out!")
+    }
+
+    const logIn = () => {
+        // toast.success("You are logged in!")
+        navigate("/login")
     }
 
     return (
@@ -495,9 +500,29 @@ const Header = () => {
 
                 <ul className='navigation'>
                     <li>TECHNOLOGY</li>
-                    <li>FAQ</li>
-                    <li onClick={() => logOut()}>
-                        LOG OUT
+                    <li>
+                        <Link to="/support">
+                            FAQ
+                        </Link>
+
+                    </li>
+                    <li >
+                        {
+                            localStorage.isAuth ?
+                                <span
+                                    onClick={() => logOut()}
+                                >
+                                    LOG OUT
+                                </span>
+                                :
+                                <span
+                                    onClick={() => logIn()}                                    
+                                >
+                                    LOG IN
+                                </span>
+
+                        }
+
                     </li>
                     <li
                         className='cart-length'

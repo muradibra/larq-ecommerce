@@ -1,4 +1,6 @@
 import React from 'react'
+import pithcer_video from '../../../../assets/videos/LARQ-Pitcher_Filter_View.webm'
+
 
 function LongLastingFilters() {
     return (
@@ -6,7 +8,9 @@ function LongLastingFilters() {
 
 
             <div className='video-wrapper'>
-                <video width="960" poster="https://res.cloudinary.com/larq/video/upload/c_scale,q_auto,w_960/v1/assets/spa/v2/content/product/pitcher/LARQ-Pitcher_Filter_View.jpg" aria-label="Animated video of showing how long lasting Larq filters are inserted and used" muted="" loop="" autoPlay={true} playsInline={true} title="Long-lasting filters" className="cardBody_videoEl"><source src="https://res.cloudinary.com/larq/video/upload/c_scale,q_auto,w_960/v1/assets/spa/v2/content/product/pitcher/LARQ-Pitcher_Filter_View.webm" type="video/webm" /><source src="https://res.cloudinary.com/larq/video/upload/c_scale,q_auto,w_960/v1/assets/spa/v2/content/product/pitcher/LARQ-Pitcher_Filter_View.mp4" type="video/mp4" /><source src="https://res.cloudinary.com/larq/video/upload/c_scale,q_auto,w_960/v1/assets/spa/v2/content/product/pitcher/LARQ-Pitcher_Filter_View.ogv" type="video/ogg" /></video>
+                <video width="960" muted loop autoPlay playsInline aria-label="Animated video of showing how long lasting Larq filters are inserted and used" title="Long-lasting filters" className="cardBody_videoEl">
+                    <source src={pithcer_video} />
+                </video>
             </div>
             <div className='text'>
                 <div className="title">

@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProducts } from '../../../slices/productsSlice/productsSlice'
-import FilterPurification from '../../Filter Products/FilterPurification'
-import FilterHome from '../../Filter Products/FilterHome'
-import FilterDrinkware from '../../Filter Products/FilterDrinkware'
+import FilterPurification from '../Shop/Filter Products/FilterPurification'
+import FilterHome from '../Shop/Filter Products/FilterHome'
+import FilterDrinkware from '../Shop/Filter Products/FilterDrinkware'
 import PortabelPurificationSlogan from './PortabelPurificationSlogan';
 import AtHomePurificationSlogan from './AtHomePurificationSlogan';
 import OnTheGoHydrationSlogan from './OnTheGoHydrationSlogan';

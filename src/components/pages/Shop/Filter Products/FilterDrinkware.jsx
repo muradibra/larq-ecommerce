@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchProducts } from '../../slices/productsSlice/productsSlice'
+import { fetchProducts } from '../../../../slices/productsSlice/productsSlice'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Scrollbar } from 'swiper/modules'
 import { Link } from 'react-router-dom'
 
-function FilterHome() {
+function FilterDrinkware() {
     const { products } = useSelector(store => store.products)
     const dispatch = useDispatch()
 
@@ -19,18 +19,21 @@ function FilterHome() {
                 modules={[Scrollbar]}
                 // scrollbar={{ draggable: true }}
                 spaceBetween={25}
-                slidesPerView={1.1}
+                slidesPerView={1}
                 breakpoints={{
                     724: {
                         slidesPerView: 1.4
                     },
                     960: {
-                        slidesPerView: 2
+                        slidesPerView: 2.1
                     },
+                    1280: {
+                        slidesPerView: 3
+                    }
                 }}
             >
                 {
-                    products.filter(item => item.shop === "home").map(product => (
+                    products.filter(item => item.shop === "drinkware").map(product => (
                         <SwiperSlide key={product.id}>
                             <div className="slide-inner">
                                 <Link to={`/product/${product.slug}`}>
@@ -44,7 +47,7 @@ function FilterHome() {
                                             {
                                                 product.discounted_price ?
                                                     <span>
-                                                        $<del>{product.price}</del> ${product.discounted_price}
+                                                        $<del>{product.price}</del> {product.discounted_price}
                                                     </span>
                                                     :
                                                     <span>${product.price}</span>
@@ -61,4 +64,4 @@ function FilterHome() {
     )
 }
 
-export default FilterHome
+export default FilterDrinkware

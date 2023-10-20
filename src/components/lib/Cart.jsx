@@ -5,7 +5,7 @@ import { toggleCart } from '../../slices/sideMenuSlice/sideMenuSlice'
 import { useEffect } from 'react'
 import { deleteCartItem, getCart, updateCart } from '../../slices/cartDataSlice/cartDataSlice'
 import { nanoid } from '@reduxjs/toolkit'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FiTrash } from 'react-icons/fi'
 import { FaPlus, FaMinus } from 'react-icons/fa'
 
@@ -14,6 +14,7 @@ function Cart() {
     const { cartData } = useSelector(store => store.cartData)
     const dispatch = useDispatch()
     const cartRef = useRef()
+    const navigate = useNavigate()
 
     useEffect(() => {
         if (isCartOpen) {
@@ -96,10 +97,16 @@ function Cart() {
                                 cartData.map(item => (
                                     <div className='cart-item' key={nanoid()}>
                                         <div className='cart-item-img'>
-                                            <img src={item.product_img} alt={item.product_name} />
+                                            <Link to={`/product/${item.slug}`}>
+                                                <img src={item.product_img} alt={item.product_name} />
+                                            </Link>
                                         </div>
                                         <div className='cart-item-info'>
-                                            <p>{item.product_name}</p>
+                                            <p>
+                                                <Link to={`/product/${item.slug}`}>
+                                                    {item.product_name}
+                                                </Link>
+                                            </p>
                                             <span className='cart-item-options'>{item.product_color}</span>
                                             <div className='increment-decrement'>
                                                 <button
@@ -141,6 +148,15 @@ function Cart() {
                                         cartData.reduce((accumulator, currentValue) => accumulator + currentValue.quantity * currentValue.product_price, 0)
                                     }
                                 </span>
+                            </div>
+
+                            <div className='checkout-btn'>
+                                <Link
+                                    to="/checkout"
+                                    onClick={() => dispatch(toggleCart())}
+                                >
+                                    Check out now
+                                </Link>
                             </div>
                         </div>
                         :

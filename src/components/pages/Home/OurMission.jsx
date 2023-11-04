@@ -1,7 +1,10 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
+import { useNavigate } from 'react-router-dom'
 
 function OurMission() {
+    const navigate = useNavigate()
+
     return (
         <div className='our-mission'>
             <div className='bg-img-wrapper'>
@@ -15,7 +18,7 @@ function OurMission() {
                         We make it easy to opt for the healthier and more sustainable hydration choice, anytime and anywhere.
                     </div>
                     <div className="learn-more">
-                        <button>
+                        <button onClick={() => navigate('/technology')}>
                             Learn more
                             <BsArrowRight />
                         </button>

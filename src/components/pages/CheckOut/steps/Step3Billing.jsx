@@ -60,7 +60,7 @@ function Step3Billing() {
     const data = {}
 
     for (const [key, value] of formData.entries()) {
-      data[key] = value
+      data[key] = value.trim()
     }
 
     const errors = validate(data)

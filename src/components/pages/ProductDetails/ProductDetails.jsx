@@ -114,7 +114,7 @@ function ProductDetails() {
               }
 
               {
-                product.slug.includes("bottle") &&
+                !product.slug.includes("pitcher") &&
                 <div>
                   <LarqPurevis />
                   <ReviewsAndPromos />

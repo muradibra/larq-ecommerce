@@ -107,7 +107,7 @@ function CheckOut() {
                                 currentStep !== 1 ?
                                     <div className='email-and-edit'>
                                         <span>{email}</span>
-                                        <button onClick={() => dispatch(goToSelectedStep(1))}>Edit</button>
+                                        <button className='edit-btn' onClick={() => dispatch(goToSelectedStep(1))}>Edit</button>
                                     </div>
                                     :
                                     null
@@ -115,7 +115,7 @@ function CheckOut() {
 
                             {
                                 currentStep !== 1 ?
-                                    <button className='selected-step-btn' onClick={() => dispatch(goToSelectedStep(1))}>Edit</button>
+                                    <button className='selected-step-btn edit-btn' onClick={() => dispatch(goToSelectedStep(1))}>Edit</button>
                                     :
                                     null
                             }
@@ -146,7 +146,7 @@ function CheckOut() {
                                             <p>{step2.address1}</p>
                                         </div>
                                         <div>
-                                            <button onClick={() => dispatch(goToSelectedStep(2))}>Edit</button>
+                                            <button className='edit-btn' onClick={() => dispatch(goToSelectedStep(2))}>Edit</button>
                                         </div>
                                     </div>
                                     :
@@ -172,9 +172,14 @@ function CheckOut() {
                                             <p>{step3.address1}</p>
                                         </div>
                                         <div>
-                                            <button onClick={() => {
-                                                dispatch(goToSelectedStep(3))
-                                            }}>Edit</button>
+                                            <button
+                                                className='edit-btn'
+                                                onClick={() => {
+                                                    dispatch(goToSelectedStep(3))
+                                                }}
+                                            >
+                                                Edit
+                                            </button>
                                         </div>
                                     </div>
                                     :

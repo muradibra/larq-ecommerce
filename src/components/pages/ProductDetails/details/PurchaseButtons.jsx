@@ -8,7 +8,7 @@ function PurchaseButtons({ product, insulation, productSize, colorName }) {
     const { cartData } = useSelector(store => store.cartData)
 
     const addProductToCart = (product) => {
-        debugger
+        // debugger
         const existProduct = cartData.find(item => item.id === product.id
             // && item.product_color === colorName
         )

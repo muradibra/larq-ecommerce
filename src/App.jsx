@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './components/pages/Home/Home'
 import Header from './components/layout/Header'
 import Login from './components/pages/Login/Login'
-import { AppContext } from './context/appContext'
+import { AppContext } from './context/AppContext'
 import './assets/css/styles.scss'
 import 'swiper/css/bundle'
 import Footer from './components/layout/Footer'
@@ -27,6 +27,8 @@ import Support from './components/pages/Support/Support'
 import ProductFaqs from './components/pages/Support/components/ProductFaqs'
 import CheckOut from './components/pages/CheckOut/CheckOut'
 import CheckOutHeader from './components/pages/CheckOut/CheckOutHeader'
+import PageNotFound from './components/pages/NotFound/PageNotFound'
+import Technology from './components/pages/Technology/Technology'
 
 function App() {
   const dispatch = useDispatch()
@@ -71,6 +73,8 @@ function App() {
             <Route path='/checkout' element={<CheckOut />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/technology' element={<Technology />} />
+            <Route path='*' element={<PageNotFound />} />
           </Routes>
           {isCheckoutPage ? null : <Footer />}
 

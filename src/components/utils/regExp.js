@@ -10,6 +10,6 @@ export const checkIsValidPassword = password => {
 }
 
 export const checkMonthYear = value => {
-    const regExp = /^(0[1-9]|1[0-2])[-/]\d{2}$/;
+    const regExp = /^(0[1-9]|1[0-2]) \d{2}$/;
     return regExp.test(value);
 } 

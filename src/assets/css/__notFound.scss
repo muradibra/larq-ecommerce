@@ -1,0 +1,78 @@
+.not-found {
+  width: 100%;
+  margin: 100px auto 6rem auto;
+  padding: 0 1.5rem;
+  max-width: 86rem;
+
+  .not-found-inner {
+    margin: 0 auto;
+    display: block;
+    padding: 6rem 0.75rem;
+    max-width: 1132px;
+    text-align: center;
+    background: #f5f9fc;
+    color: #153a5b;
+
+    .title {
+      h1 {
+        margin: 0 0 3rem;
+        text-align: center;
+        font-size: 32px;
+      }
+    }
+
+    p {
+      margin-bottom: 2.25rem;
+      color: #5a5e60;
+      font-size: 18px;
+      a {
+        color: #153a5b;
+        font-weight: 600;
+        &:hover {
+          color: #757575;
+        }
+      }
+    }
+
+    .link-to-shop {
+      a {
+        color: #ffffff;
+        border: 2px solid #153a5b;
+        background-color: #153a5b;
+        cursor: pointer;
+        padding: 0.7rem 4rem;
+        text-align: center;
+        font-weight: 600;
+        transition: 0.4s ease-out;
+
+        &:hover {
+          background-color: #fff;
+          color: #153a5b;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 724px) {
+  .not-found {
+    .not-found-inner {
+      .title {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .not-found {
+    .not-found-inner {
+      .title {
+        width: 66.66667%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

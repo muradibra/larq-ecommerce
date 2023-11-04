@@ -61,14 +61,14 @@ function Step2Shipping() {
     const data = {};
 
     for (const [key, value] of formData.entries()) {
-      data[key] = value;
+      data[key] = value.trim();
     }
 
     const errors = validate(data);
     setValidationErrors(errors);
 
     if (Object.values(errors).filter(string => string).length) {
-      // console.log(Object.values(errors));
+      console.log(Object.values(errors));
       return;
     }
 

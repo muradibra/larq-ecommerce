@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateStep } from '../../../../../slices/stepSlice/stepSlice'
 
-function StepInputs({ label, name, step, validationErrors }) {
+function StepInputs({ label, name, step, placeHolder }) {
     const dispatch = useDispatch()
     const stepData = useSelector(store => store.step[step])
     // console.log(stepData)
@@ -18,9 +18,10 @@ function StepInputs({ label, name, step, validationErrors }) {
                 onChange={(e) => dispatch(updateStep({
                     stateName: step,
                     field: name,
-                    value: e.target.value
+                    value: name === "expiration" ? e.target.value : e.target.value.trim() 
                 }))}
                 className={``}
+                placeholder={placeHolder ? placeHolder : ""}
             // disabled={!selectedCountry}
             />
         </div>

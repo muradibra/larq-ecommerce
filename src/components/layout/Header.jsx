@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineArrowRight } from 'react-icons/ai'
 import Logo from '../lib/Logo';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart, toggleSideMenu } from '../../slices/sideMenuSlice/sideMenuSlice';
-import { AppContext } from '../../context/appContext';
+import { AppContext } from '../../context/AppContext';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 // import Cart from '../lib/Cart';

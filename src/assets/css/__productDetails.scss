@@ -136,7 +136,11 @@
       }
 
       .img-wrapper {
-        width: 100%;
+        position: relative;
+        width: 100%; /* Adjust the width as needed */
+        padding-top: 100%; /* This is the trick to maintain a 1:1 aspect ratio */
+        overflow: hidden;
+
         &::before {
           content: "";
           display: block;
@@ -152,7 +156,12 @@
         }
 
         img {
+          position: absolute;
+          top: 0;
+          left: 0;
           width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the entire container */
         }
       }
     }
@@ -236,7 +245,7 @@
           button {
             display: flex;
             justify-content: space-between;
-            padding: 5px;
+            padding: 7px;
             background-color: transparent;
             outline: none;
             border: 1px solid #d8dee4;
@@ -885,7 +894,6 @@
             gap: 30px;
             .tech {
               h1 {
-                font-size: 3.73333rem;
                 line-height: 1.43;
                 margin-bottom: 10px;
                 letter-spacing: 0.25px;
@@ -1312,7 +1320,12 @@
     gap: 30px;
 
     .product-images {
-      width: 55%;
+      width: 50%;
+    }
+
+    .product-info {
+      max-width: none !important;
+      width: 45% !important;
     }
 
     .insulation {
@@ -1324,7 +1337,6 @@
           span {
             font-size: 11px;
           }
-
         }
       }
     }
@@ -1358,8 +1370,6 @@
         }
       }
     }
-
-    
 
     .reviews-and-promos {
       // grid-column-gap: 3.33333rem !important;
@@ -1437,8 +1447,23 @@
         column-gap: 20px;
       }
     }
+
+    .larq-bottle-purevis {
+      .desktop {
+        .left {
+          .tech {
+            h1 {
+              font-size: 3rem ;
+            }
+          }
+        }
+      }
+    }
   }
 }
+
+// @media (min-width: 961px) {
+// }
 
 @media (min-width: 1280px) {
   .filter-tech,
@@ -1448,6 +1473,18 @@
 
       .left {
         gap: 0 !important;
+      }
+    }
+  }
+
+  .larq-bottle-purevis {
+    .desktop {
+      .left {
+        .tech {
+          h1 {
+            font-size: 3.3rem !important;
+          }
+        }
       }
     }
   }

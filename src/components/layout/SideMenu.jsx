@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { useEffect } from 'react'
 import { toggleSideMenu } from '../../slices/sideMenuSlice/sideMenuSlice'
-import { AppContext } from '../../context/appContext'
+import { AppContext } from '../../context/AppContext'
 import toast from 'react-hot-toast'
 
 function SideMenu() {
@@ -94,13 +94,7 @@ function SideMenu() {
 
           <ul>
             <li>
-              <Link onClick={() => dispatch(toggleSideMenu())} to='/accessories'>Filters & Accessories</Link>
-            </li>
-            <li>
-              <Link onClick={() => dispatch(toggleSideMenu())} to='/shop?shop=gift-sets'>Gift sets</Link>
-            </li>
-            <li>
-              <Link onClick={() => dispatch(toggleSideMenu())} to='/corporate-gifting'>Corporate gifting</Link>
+              <Link onClick={() => dispatch(toggleSideMenu())} to='/technology'>Technology</Link>
             </li>
             <li>
               <Link onClick={() => dispatch(toggleSideMenu())} to='/support'>FAQ</Link>

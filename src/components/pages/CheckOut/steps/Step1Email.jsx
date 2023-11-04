@@ -66,7 +66,7 @@ function Step1Email() {
                             dispatch(updateStep({
                                 stateName: "step1",
                                 field: "email",
-                                value: e.target.value
+                                value: e.target.value.trim()
                             }));
                             setEmailErr(""); // Clear the error message when input changes
                         }}

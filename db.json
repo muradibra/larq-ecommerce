@@ -50,7 +50,7 @@
       "insulation": [
         {
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "label": "Non-Insulated",
@@ -171,7 +171,7 @@
       "insulation": [
         {
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "label": "Non-Insulated",
@@ -252,7 +252,7 @@
       "insulation": [
         {
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "label": "Non-Insulated",
@@ -362,7 +362,7 @@
         {
           "icon": "https://static.vecteezy.com/system/resources/thumbnails/000/353/173/small/Health__2821_29.jpg",
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "icon": "https://img.myloview.com/stickers/steel-thermos-icon-outline-steel-thermos-vector-icon-for-web-design-isolated-on-white-background-400-177311507.jpg",
@@ -460,7 +460,7 @@
       "insulation": [
         {
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "label": "Non-Insulated",
@@ -558,7 +558,7 @@
       "insulation": [
         {
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "label": "Non-Insulated",
@@ -649,7 +649,7 @@
         {
           "icon": "",
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "icon": "",
@@ -763,7 +763,7 @@
       "insulation": [
         {
           "label": "Insulated",
-          "description": "24 hours cold and 12 hot"
+          "description": "24 h cold, 12 hot"
         },
         {
           "label": "Non-Insulated",
@@ -828,19 +828,73 @@
           "answer": "You will find manual in your box or you can download it here!"
         }
       ]
+    },
+    {
+      "shop": "purification",
+      "title": "Non incidunt autem",
+      "slug": "non-incidunt-autem-white",
+      "main_img_url": "https://johnlewis.scene7.com/is/image/JohnLewis/241221079?$rsp-pdp-port-640-82$",
+      "stars": 5,
+      "review_count": "6160 reviews",
+      "price": "99",
+      "color": "White",
+      "description": {
+        "long": "",
+        "short": ""
+      },
+      "insulation": [
+        {
+          "label": "Insulated",
+          "description": "24 h cold, 12 hot"
+        },
+        {
+          "label": "Non-Insulated",
+          "description": "Light as air"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "17 oz"
+        },
+        {
+          "size": "25 oz"
+        }
+      ],
+      "colors": [
+        {
+          "color_name": "White",
+          "hex_code": "#fff"
+        },
+        {
+          "color_name": "Black",
+          "hex_code": "#000"
+        }
+      ],
+      "skus": [
+        {
+          "img_url": "https://johnlewis.scene7.com/is/image/JohnLewis/241221079?$rsp-pdp-port-640-82$"
+        },
+        {
+          "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuJoN9NO7UVap5UQ5Yf3AO5iwr2g4F1K_TWfdIgQ3RuKIX9wwi3x3-TlIh4MP4I2jBAMo&usqp=CAU"
+        },
+        {
+          "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUeWj-RmyPCFMlJULZWQL8PCBWC1a0DkmWKNdCIX_ijBi-x-C6fS1Bxuh3gBPVqm4P-Y&usqp=CAU"
+        }
+      ],
+      "id": 9
     }
   ],
   "cart": [
     {
-      "id": 2,
+      "id": 1,
       "quantity": 1,
-      "product_img": "/src/assets/img/home-product1.webp",
-      "product_name": "LARQ Pitcher PureVis™",
+      "product_img": "/src/assets/img/product-img1.webp",
+      "product_name": "LARQ Bottle PureVis™",
       "product_color": "Monaco Blue",
-      "product_price": "139.00",
+      "product_price": "99.00",
       "insulation": "",
       "size": "",
-      "slug": "larq-pitcher-purevis-monaco-blue"
+      "slug": "larq-bottle-purevis-monaco-blue"
     }
   ],
   "faqs": [
@@ -1145,5 +1199,181 @@
       ]
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "purchased_items": [
+        {
+          "id": 2,
+          "quantity": 1,
+          "product_img": "/src/assets/img/home-product1.webp",
+          "product_name": "LARQ Pitcher PureVis™",
+          "product_color": "Monaco Blue",
+          "product_price": "139.00",
+          "insulation": "",
+          "size": "",
+          "slug": "larq-pitcher-purevis-monaco-blue"
+        },
+        {
+          "id": 1,
+          "quantity": 1,
+          "product_img": "/src/assets/img/product-img1.webp",
+          "product_name": "LARQ Bottle PureVis™",
+          "product_color": "Monaco Blue",
+          "product_price": "99.00",
+          "insulation": "",
+          "size": "",
+          "slug": "larq-bottle-purevis-monaco-blue"
+        }
+      ],
+      "customer": {
+        "email": "muradibrahimov495@gmail.com"
+      },
+      "shipping": {
+        "first_name": "Kieran",
+        "last_name": "Dyer",
+        "company": "Bruce and Britt LLC",
+        "country": "Åland Islands",
+        "postal_code": "AZ1107",
+        "city": "Sint est ipsum qui",
+        "state_or_province": "Omnis non esse et e",
+        "address1": "660 West Clarendon Lane",
+        "address2": "Enim nihil quis omni",
+        "phone_number": "+1 (617) 853-3609",
+        "isSame": true
+      },
+      "billing": {
+        "first_name": "Kieran",
+        "last_name": "Dyer",
+        "company": "Bruce and Britt LLC",
+        "country": "Åland Islands",
+        "postal_code": "AZ1107",
+        "city": "Sint est ipsum qui",
+        "state_or_province": "Omnis non esse et e",
+        "address1": "660 West Clarendon Lane",
+        "address2": "Enim nihil quis omni",
+        "phone_number": "+1 (617) 853-3609"
+      },
+      "payment": {
+        "credit_card": "701",
+        "expiration": "Ad veniam magni eiu",
+        "name_on_card": "Noelani Weiss",
+        "cvv": "Est sunt laborum E"
+      },
+      "total": 268,
+      "id": 1
+    },
+    {
+      "purchased_items": [
+        {
+          "id": 2,
+          "quantity": 1,
+          "product_img": "/src/assets/img/home-product1.webp",
+          "product_name": "LARQ Pitcher PureVis™",
+          "product_color": "Monaco Blue",
+          "product_price": "139.00",
+          "insulation": "",
+          "size": "",
+          "slug": "larq-pitcher-purevis-monaco-blue"
+        },
+        {
+          "id": 1,
+          "quantity": 1,
+          "product_img": "/src/assets/img/product-img1.webp",
+          "product_name": "LARQ Bottle PureVis™",
+          "product_color": "Monaco Blue",
+          "product_price": "99.00",
+          "insulation": "",
+          "size": "",
+          "slug": "larq-bottle-purevis-monaco-blue"
+        }
+      ],
+      "customer": {
+        "email": "padohav@mailinator.com"
+      },
+      "shipping": {
+        "first_name": "Iona",
+        "last_name": "Horton",
+        "company": "Riggs and Green Plc",
+        "country": "Åland Islands",
+        "postal_code": "AZ1107",
+        "city": "Magnam illo enim nih",
+        "state_or_province": "Debitis qui labore i",
+        "address1": "25 Rocky Hague Court",
+        "address2": "Cupiditate id qui mo",
+        "phone_number": "+1 (542) 904-5949",
+        "isSame": true
+      },
+      "billing": {
+        "first_name": "Iona",
+        "last_name": "Horton",
+        "company": "Riggs and Green Plc",
+        "country": "Åland Islands",
+        "postal_code": "AZ1107",
+        "city": "Magnam illo enim nih",
+        "state_or_province": "Debitis qui labore i",
+        "address1": "25 Rocky Hague Court",
+        "address2": "Cupiditate id qui mo",
+        "phone_number": "+1 (542) 904-5949"
+      },
+      "payment": {
+        "credit_card": "4169738825479938",
+        "expiration": "12 25",
+        "name_on_card": "Ashely Rios",
+        "cvv": "123"
+      },
+      "total": 268,
+      "id": 2
+    },
+    {
+      "purchased_items": [
+        {
+          "id": 1,
+          "quantity": 1,
+          "product_img": "/src/assets/img/product-img1.webp",
+          "product_name": "LARQ Bottle PureVis™",
+          "product_color": "Monaco Blue",
+          "product_price": "99.00",
+          "insulation": "",
+          "size": "",
+          "slug": "larq-bottle-purevis-monaco-blue"
+        }
+      ],
+      "customer": {
+        "email": "rojukaboc@mailinator.com"
+      },
+      "shipping": {
+        "first_name": "Shea",
+        "last_name": "Jenkins",
+        "company": "Cunningham Campos Trading",
+        "country": "Åland Islands",
+        "postal_code": "AZ1107",
+        "city": "Sit non sint veniam",
+        "state_or_province": "Et voluptatem delect",
+        "address1": "429 West Oak Street",
+        "address2": "Optio minima accusa",
+        "phone_number": "+1 (117) 311-9799",
+        "isSame": true
+      },
+      "billing": {
+        "first_name": "Shea",
+        "last_name": "Jenkins",
+        "company": "Cunningham Campos Trading",
+        "country": "Åland Islands",
+        "postal_code": "AZ1107",
+        "city": "Sit non sint veniam",
+        "state_or_province": "Et voluptatem delect",
+        "address1": "429 West Oak Street",
+        "address2": "Optio minima accusa",
+        "phone_number": "+1 (117) 311-9799"
+      },
+      "payment": {
+        "credit_card": "5103071500982562",
+        "expiration": "10 25",
+        "name_on_card": "Gail Holcomb",
+        "cvv": "Numquam ea cupiditat"
+      },
+      "total": 129,
+      "id": 3
+    }
+  ]
 }

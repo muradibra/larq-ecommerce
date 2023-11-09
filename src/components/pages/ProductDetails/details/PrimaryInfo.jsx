@@ -1,7 +1,8 @@
 import React from 'react'
+import { AiFillStar } from 'react-icons/ai'
 import { PiWarningCircleFill } from 'react-icons/pi'
 
-function PrimaryInfo({product}) {
+function PrimaryInfo({ product }) {
     return (
         <div className='primary-info'>
             <div className="product-title">
@@ -11,13 +12,24 @@ function PrimaryInfo({product}) {
             <div className='product-price'>
                 <span>${product.price}</span>
                 <span className='by-credit'>
-                    <span className=''>{product.payment_by_credit}</span>
+                    <span>Or 4 interest-free installments of ${product.discounted_price ? product.discounted_price / 4 : product.price / 4}</span>
                     <PiWarningCircleFill />
                 </span>
             </div>
 
             <div className='reviews'>
-                {product.stars} <span>{product.review_count}</span>
+                {
+                    product.stars > 4 ?
+                    <span>
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                        <AiFillStar />
+                    </span>
+                    : ""
+                }
+                <span>{product.review_count}</span>
             </div>
         </div>
     )

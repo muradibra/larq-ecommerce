@@ -55,10 +55,7 @@ function App() {
         <Cart />
         <ScrollToTop />
 
-        {/* { */}
-        {/* isAuth ? */}
         <div>
-          {/* <Header /> */}
           {isCheckoutPage ? <CheckOutHeader /> : <Header />}
           <Routes>
             <Route path='/' element={<Home />} />
@@ -75,6 +72,7 @@ function App() {
             <Route path='/register' element={<Register />} />
             <Route path='/technology' element={<Technology />} />
             <Route path='*' element={<PageNotFound />} />
+            <Route path='/support/*' element={<PageNotFound />} />
           </Routes>
           {isCheckoutPage ? null : <Footer />}
 

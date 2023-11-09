@@ -31,6 +31,12 @@
       "id": 2
     }
   ],
+  "admin": [
+    {
+      "username": "superadmin",
+      "password": "superadmin"
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -828,60 +834,6 @@
           "answer": "You will find manual in your box or you can download it here!"
         }
       ]
-    },
-    {
-      "shop": "purification",
-      "title": "Non incidunt autem",
-      "slug": "non-incidunt-autem-white",
-      "main_img_url": "https://johnlewis.scene7.com/is/image/JohnLewis/241221079?$rsp-pdp-port-640-82$",
-      "stars": 5,
-      "review_count": "6160 reviews",
-      "price": "99",
-      "color": "White",
-      "description": {
-        "long": "",
-        "short": ""
-      },
-      "insulation": [
-        {
-          "label": "Insulated",
-          "description": "24 h cold, 12 hot"
-        },
-        {
-          "label": "Non-Insulated",
-          "description": "Light as air"
-        }
-      ],
-      "sizes": [
-        {
-          "size": "17 oz"
-        },
-        {
-          "size": "25 oz"
-        }
-      ],
-      "colors": [
-        {
-          "color_name": "White",
-          "hex_code": "#fff"
-        },
-        {
-          "color_name": "Black",
-          "hex_code": "#000"
-        }
-      ],
-      "skus": [
-        {
-          "img_url": "https://johnlewis.scene7.com/is/image/JohnLewis/241221079?$rsp-pdp-port-640-82$"
-        },
-        {
-          "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuJoN9NO7UVap5UQ5Yf3AO5iwr2g4F1K_TWfdIgQ3RuKIX9wwi3x3-TlIh4MP4I2jBAMo&usqp=CAU"
-        },
-        {
-          "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUeWj-RmyPCFMlJULZWQL8PCBWC1a0DkmWKNdCIX_ijBi-x-C6fS1Bxuh3gBPVqm4P-Y&usqp=CAU"
-        }
-      ],
-      "id": 9
     }
   ],
   "cart": [

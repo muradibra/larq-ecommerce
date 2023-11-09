@@ -10,7 +10,7 @@ a {
   background-color: #fff;
   transition: ease-out 0.7s;
   padding: 0px 16px 5rem;
-  z-index: 1000;
+  z-index: 100000000;
   overflow-y: auto;
 
   .side-menu-content {
@@ -140,7 +140,6 @@ a {
           font-weight: 600;
           font-family: "Open Sans", sans-serif;
           cursor: pointer;
-
         }
 
         a {

@@ -8,17 +8,16 @@ import { toggleCart, toggleSideMenu } from '../../slices/sideMenuSlice/sideMenuS
 import { AppContext } from '../../context/AppContext';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
-// import Cart from '../lib/Cart';
-// import sideImg1_clean from '../../assets/img/sideImg1-clean.jpg'
-// import sideImg2_clean from '../../assets/img/sideImg2-clean.jpg'
-// import sideImg3_clean from '../../assets/img/sideImg3-clean.jpg'
-
+import ShopAllSection from './Header Components/ShopAllSection';
+import PurificationSection from './Header Components/PurificationSection';
+import HomeSection from './Header Components/HomeSection';
+import DrinkwareSection from './Header Components/DrinkwareSection';
 
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
     const dispatch = useDispatch()
-    const { isSideMenuOpen, isCartOpen } = useSelector(store => store.side)
+    const { isSideMenuOpen } = useSelector(store => store.side)
     const { setIsAuth } = useContext(AppContext)
     const navigate = useNavigate()
     const cartRef = useRef()
@@ -102,8 +101,8 @@ const Header = () => {
                         <Link to='/shop'>
                             SHOP ALL
                         </Link>
-
-                        <div className={`shop-all-section ${showShopAllSection ? 'show' : ''}`}>
+                        <ShopAllSection showShopAllSection={showShopAllSection} />
+                        {/* <div className={`shop-all-section ${showShopAllSection ? 'show' : ''}`}>
                             <div className="shop-all-section-content">
 
                                 <div className='secondary-links'>
@@ -149,9 +148,7 @@ const Header = () => {
 
                                 <div className='technologies'>
                                     <div className='sideImg sideImg1-clean'>
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
+                                        
                                         <div className='text'>
                                             <h3>Purification</h3>
                                             <span>Filter or purify water on the go.</span>
@@ -159,9 +156,7 @@ const Header = () => {
                                     </div>
 
                                     <div className='sideImg sideImg2-clean'>
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
+                                        
                                         <div className='text'>
                                             <h3>Home</h3>
                                             <span>Equip your home with Nano Zero filtration.</span>
@@ -169,9 +164,7 @@ const Header = () => {
                                     </div>
 
                                     <div className='sideImg sideImg3-clean'>
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
+                                        
                                         <div className='text'>
                                             <h3>Drinkware</h3>
                                             <span>Hydrate effortlessly on the go.</span>
@@ -181,7 +174,8 @@ const Header = () => {
 
                             </div>
 
-                        </div>
+                        </div> */}
+
                     </li>
 
                     <li
@@ -198,94 +192,7 @@ const Header = () => {
                             PURIFICATION
                         </Link>
 
-                        <div className={`purification-section ${showPurificationSection ? 'show-purification' : ''}`}>
-                            <div className="purification-section-content">
-
-                                <div className='secondary-links'>
-                                    <button className='explore-purification-btn'>
-                                        <Link to='/shop'>
-                                            <span>Explore Purification</span>
-                                            <AiOutlineArrowRight />
-                                        </Link>
-                                    </button>
-
-                                    <ul className='first-links'>
-                                        <li>
-                                            <Link to='/accessories'>
-                                                Filters & Accessories
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/shop?shop=gift-sets'>
-                                                Gift sets
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/corporate-gifting'>
-                                                Corporate gifting
-                                            </Link>
-                                        </li>
-                                    </ul>
-
-                                    <ul className='second-links'>
-                                        <li>LEARN MORE</li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                PureVis technology
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                Nano zero technology
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className='products'>
-                                    <div
-                                        className='product-img product-img1'
-                                        onClick={() => navigate('/product/larq-bottle-purevis-monaco-blue')}
-                                    >
-                                        <div className='sideImg1'>
-                                            {/* <img src={sideImg1_clean} alt="" /> */}
-                                        </div>
-                                        <div className='text'>
-                                            <h4>LARQ Bottle PureVis™</h4>
-                                            <span>From $99</span>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        className='product-img product-img2'
-                                        onClick={() => navigate('/product/larq-bottle-movement-purevis-monaco-blue')}
-                                    >
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
-                                        <div className='text'>
-                                            <h4>LARQ Bottle Movement...</h4>
-                                            <span>From $89</span>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        className='product-img product-img3'
-                                        onClick={() => navigate('/product/larq-bottle-filtered-obsidian-black')}
-                                    >
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
-                                        <div className='text'>
-                                            <h4>LARQ Bottle Filtered</h4>
-                                            <span>From <del>$58</del> $49.95</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <PurificationSection showPurificationSection={showPurificationSection} />
 
                     </li>
 
@@ -302,84 +209,8 @@ const Header = () => {
                             HOME
                         </Link>
 
-                        <div className={`home-section ${showHomeSection ? 'show-home' : ''}`}>
-                            <div className="home-section-content">
+                        <HomeSection showHomeSection={showHomeSection} />
 
-                                <div className='secondary-links'>
-                                    <button className='explore-home-btn'>
-                                        <Link to='/shop'>
-                                            <span>Explore Home</span>
-                                            <AiOutlineArrowRight />
-                                        </Link>
-                                    </button>
-
-                                    <ul className='first-links'>
-                                        <li>
-                                            <Link to='/accessories'>
-                                                Filters & Accessories
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/shop?shop=gift-sets'>
-                                                Gift sets
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/corporate-gifting'>
-                                                Corporate gifting
-                                            </Link>
-                                        </li>
-                                    </ul>
-
-                                    <ul className='second-links'>
-                                        <li>LEARN MORE</li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                PureVis technology
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                Nano zero technology
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className='home-products'>
-                                    <div
-                                        className='home-product-img home-product-img1'
-                                        onClick={() => navigate('/product/larq-pitcher-purevis-monaco-blue')}
-                                    >
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
-                                        <div className='text'>
-                                            <h4>LARQ Pitcher PureVis™</h4>
-                                            <p>Monaco Blue</p>
-                                            <span>From $99</span>
-                                        </div>
-                                    </div>
-
-                                    <div
-                                        className='home-product-img home-product-img2'
-                                        onClick={() => navigate('/product/larq-pitcher-purevis-pure-white')}
-                                    >
-                                        {/* <div className='sideImg1'>11
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
-                                        <div className='text'>
-                                            <h4>LARQ Pitcher PureVis™</h4>
-                                            <p>Pure white</p>
-                                            <span>From $89</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
 
                     </li>
 
@@ -397,101 +228,8 @@ const Header = () => {
                             DRINKWARE
                         </Link>
 
-                        <div className={`drinkware-section ${showDrinkwareSection ? 'show-drinkware' : ''}`}>
-                            <div className="drinkware-section-content">
+                        <DrinkwareSection showDrinkwareSection={showDrinkwareSection} />
 
-                                <div className='secondary-links'>
-                                    <button className='explore-drinkware-btn'>
-                                        <Link to='/shop'>
-                                            <span>Explore drinkware</span>
-                                            <AiOutlineArrowRight />
-                                        </Link>
-                                    </button>
-
-                                    <ul className='first-links'>
-                                        <li>
-                                            <Link to='/accessories'>
-                                                Accessories
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/shop?shop=gift-sets'>
-                                                Gift sets
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/corporate-gifting'>
-                                                Corporate gifting
-                                            </Link>
-                                        </li>
-                                    </ul>
-
-                                    <ul className='second-links'>
-                                        <li>LEARN MORE</li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                PureVis technology
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                Nano zero technology
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className='drinkware-products'>
-                                    <div
-                                        className='drinkware-product-img drinkware-product-img1'
-                                        onClick={() => navigate('/product/larq-bottle-swig-top-obsidian-black')}
-                                    >
-                                        {/* <Link to={'/product/larq-bottle-swig-top-obsidian-black'}> */}
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
-                                        <div className='text'>
-                                            <h4>LARQ Bottle Swig Top</h4>
-                                            <span>From $99</span>
-                                        </div>
-                                        {/* </Link> */}
-                                    </div>
-
-                                    <div
-                                        className='drinkware-product-img drinkware-product-img2'
-                                        onClick={() => navigate('/product/larq-bottle-flip-top-obsidian-black')}
-                                    >
-                                        {/* <Link to={'/product/larq-bottle-flip-top-obsidian-black'}> */}
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
-                                        <div className='text'>
-                                            <h4>LARQ Bottle Flip Top</h4>
-                                            <span>From $89</span>
-                                        </div>
-                                        {/* </Link> */}
-                                    </div>
-
-                                    <div
-                                        className='drinkware-product-img drinkware-product-img3'
-                                        onClick={() => navigate('/product/larq-bottle-twist-top-monaco-blue')}
-                                    >
-                                        {/* <Link to={'/product/larq-bottle-twist-top-monaco-blue'}> */}
-                                        {/* <div className='sideImg1'>
-                                            <img src={sideImg1_clean} alt="" />
-                                        </div> */}
-                                        <div className='text'>
-                                            <h4>LARQ Bottle Twist Top</h4>
-                                            <span>From $89</span>
-                                        </div>
-                                        {/* </Link> */}
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
 
                     </li>
                 </ul>
@@ -516,7 +254,7 @@ const Header = () => {
                                 </span>
                                 :
                                 <span
-                                    onClick={() => logIn()}                                    
+                                    onClick={() => logIn()}
                                 >
                                     LOG IN
                                 </span>
@@ -552,13 +290,6 @@ const Header = () => {
                     }
                 </div>
             </div>
-
-
-            {/* <div className='hovers'>
-                
-            </div> */}
-
-
 
         </div>
     );

@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { AppContext } from '../../../context/appContext'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchUsers } from '../../../slices/usersSlice/usersSlice'
 import { Link, useNavigate } from 'react-router-dom'
@@ -7,6 +6,7 @@ import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'
 import { errorMessages } from '../../utils/renderErrorMessages'
 import { checkIsValidEmail, checkIsValidPassword } from '../../utils/regExp'
 import toast from 'react-hot-toast'
+import { AppContext } from '../../../context/AppContext'
 
 function Login() {
     const [email, setEmail] = useState("")

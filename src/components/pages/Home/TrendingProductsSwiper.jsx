@@ -155,11 +155,11 @@ function TrendingProductsSwiper() {
         780: {
           slidesPerView: 2
         },
-        940: {
-          slidesPerView: 2
-        },
+        // 940: {
+        //   slidesPerView: 2
+        // },
         1100: {
-          slidesPerView: 2.5
+          slidesPerView: 3
         },
         1350: {
           slidesPerView: 3

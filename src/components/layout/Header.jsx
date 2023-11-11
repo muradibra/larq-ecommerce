@@ -6,7 +6,7 @@ import Logo from '../lib/Logo';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart, toggleSideMenu } from '../../slices/sideMenuSlice/sideMenuSlice';
 import { AppContext } from '../../context/AppContext';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import ShopAllSection from './Header Components/ShopAllSection';
 import PurificationSection from './Header Components/PurificationSection';
@@ -27,6 +27,15 @@ const Header = () => {
     const [showDrinkwareSection, setShowDrinkwareSection] = useState(false);
     const [isCartVisible, setIsCartVisible] = useState(false);
     const { cartData } = useSelector(store => store.cartData)
+
+    // const location = useLocation();
+
+    // const [state, setState] = useState(`${location.pathname}`);
+
+    // useEffect(() => {
+    //     console.log(state)
+    //     setState(location.pathname);
+    // }, [location.pathname])
 
     useEffect(() => {
         const handleScroll = () => {
@@ -102,80 +111,6 @@ const Header = () => {
                             SHOP ALL
                         </Link>
                         <ShopAllSection showShopAllSection={showShopAllSection} />
-                        {/* <div className={`shop-all-section ${showShopAllSection ? 'show' : ''}`}>
-                            <div className="shop-all-section-content">
-
-                                <div className='secondary-links'>
-                                    <button className='explore-all-btn'>
-                                        <Link to='/shop'>
-                                            <span>Explore All</span>
-                                            <AiOutlineArrowRight />
-                                        </Link>
-                                    </button>
-
-                                    <ul className='first-links'>
-                                        <li>
-                                            <Link to='/accessories'>
-                                                Filters & Accessories
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/shop?shop=gift-sets'>
-                                                Gift sets
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/corporate-gifting'>
-                                                Corporate gifting
-                                            </Link>
-                                        </li>
-                                    </ul>
-
-                                    <ul className='second-links'>
-                                        <li>LEARN MORE</li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                PureVis technology
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='/technology'>
-                                                Nano zero technology
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div className='technologies'>
-                                    <div className='sideImg sideImg1-clean'>
-                                        
-                                        <div className='text'>
-                                            <h3>Purification</h3>
-                                            <span>Filter or purify water on the go.</span>
-                                        </div>
-                                    </div>
-
-                                    <div className='sideImg sideImg2-clean'>
-                                        
-                                        <div className='text'>
-                                            <h3>Home</h3>
-                                            <span>Equip your home with Nano Zero filtration.</span>
-                                        </div>
-                                    </div>
-
-                                    <div className='sideImg sideImg3-clean'>
-                                        
-                                        <div className='text'>
-                                            <h3>Drinkware</h3>
-                                            <span>Hydrate effortlessly on the go.</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div> */}
-
                     </li>
 
                     <li
@@ -237,7 +172,12 @@ const Header = () => {
                 <Logo />
 
                 <ul className='navigation'>
-                    <li>TECHNOLOGY</li>
+                    <li>
+                        <Link to="/technology">
+                            TECHNOLOGY
+                        </Link>
+
+                    </li>
                     <li>
                         <Link to="/support">
                             FAQ

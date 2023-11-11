@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function PurificationSection({ showPurificationSection }) {
+    
+
     return (
         <div className={`purification-section ${showPurificationSection ? 'show-purification' : ''}`}>
             <div className="purification-section-content">

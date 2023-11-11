@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
 function DrinkwareSection({ showDrinkwareSection }) {
+
+    // useEffect(() => {
+    //     console.log(state)
+    //     setState(location.pathname);
+    // }, [location.pathname])
+
     return (
         <div className={`drinkware-section ${showDrinkwareSection ? 'show-drinkware' : ''}`}>
             <div className="drinkware-section-content">

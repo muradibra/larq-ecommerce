@@ -1,5 +1,5 @@
 import React from 'react'
-import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
+import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import tech_swiper_img1 from './../../../assets/img/tech-swiper-img1.png'
 import tech_swiper_img2 from './../../../assets/img/tech-swiper-img2.png'
@@ -7,22 +7,39 @@ import tech_swiper_img3 from './../../../assets/img/tech-swiper-img3.webp'
 import BrilliantlyClean from '../../lib/BrilliantlyClean'
 import SelfCleaning from '../../lib/SelfCleaning'
 import PreventBacteria from '../../lib/PreventBacteria'
-import { Link } from 'react-router-dom'
 import PureTastingWaterSvg from '../../lib/PureTastingWaterSvg'
 import LongLastingFIlters from '../../lib/LongLastingFIlters'
 import FilterTracking from '../../lib/FilterTracking'
 import HydrationTracking from '../../lib/HydrationTracking'
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 function TechSwiper({ scrollToNanoZero, scrollToPurevis, scrollToHydration }) {
     return (
-        <div className='swiper-wrapper'>
+        <div className='slider-wrapper'>
             <Swiper
-                modules={[Navigation, Pagination,]}
+                modules={[Navigation, Pagination]}
                 spaceBetween={50}
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
+                initialSlide={1}
+                centeredSlides={window.innerWidth >= 724}
+                breakpoints={{
+                    724: {
+                        slidesPerView: 1.3
+                    },
+                    900: {
+                        slidesPerView: 1.8  
+                    },
+                    1000: {
+                        slidesPerView: 2
+                    },
+                    1150: {
+                        slidesPerView: 2.5
+                    },
+                    1400: {
+                        slidesPerView: 2.8
+                    }
+                }}
             >
                 <SwiperSlide>
                     <div className="slide-inner">

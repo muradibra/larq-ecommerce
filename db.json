@@ -836,19 +836,7 @@
       ]
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "quantity": 1,
-      "product_img": "/src/assets/img/product-img1.webp",
-      "product_name": "LARQ Bottle PureVis™",
-      "product_color": "Monaco Blue",
-      "product_price": "99.00",
-      "insulation": "",
-      "size": "",
-      "slug": "larq-bottle-purevis-monaco-blue"
-    }
-  ],
+  "cart": [],
   "faqs": [
     {
       "id": 1,

@@ -1,8 +1,14 @@
-# React + Vite
+# E-Commerce web application with React.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an e-commerce web application that i have created using React.js. For state management, I have used Redux Toolkit.
+And for API, I have used json-server. 
 
-Currently, two official plugins are available:
+To view this project on your machine, clone this repository, open it in VS Code and write the following commands in the terminal:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- npm i
+- npm run dev
+
+Open another terminal and write this command: 
+
+- npm i -g json-server
+- json-server --watch db.json
